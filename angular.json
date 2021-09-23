@@ -28,10 +28,20 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@spartacus/smartedit/assets",
+                "output": "assets/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/spartacus/user.scss",
+              "src/styles/spartacus/storefinder.scss",
+              "src/styles/spartacus/product.scss",
+              "src/styles/spartacus/checkout.scss",
+              "src/styles/spartacus/cart.scss"
             ],
             "scripts": []
           },
@@ -41,7 +51,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2.5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -96,12 +106,53 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@spartacus/smartedit/assets",
+                "output": "assets/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/styles/spartacus/user.scss",
+              "src/styles/spartacus/storefinder.scss",
+              "src/styles/spartacus/product.scss",
+              "src/styles/spartacus/checkout.scss",
+              "src/styles/spartacus/cart.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "xplorecomponents": {
+      "projectType": "library",
+      "root": "projects/xplorecomponents",
+      "sourceRoot": "projects/xplorecomponents/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/xplorecomponents/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/xplorecomponents/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/xplorecomponents/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/xplorecomponents/src/test.ts",
+            "tsConfig": "projects/xplorecomponents/tsconfig.spec.json",
+            "karmaConfig": "projects/xplorecomponents/karma.conf.js"
           }
         }
       }
