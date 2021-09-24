@@ -3,10 +3,7 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0",
+    "@angular/core": "^12.2.0",
     "@spartacus/asm": "~4.1.0-next.0",
     "@spartacus/assets": "~4.1.0-next.0",
     "@spartacus/cart": "~4.1.0-next.0",
@@ -19,6 +16,9 @@
     "@spartacus/styles": "~4.1.0-next.0",
     "@spartacus/tracking": "~4.1.0-next.0",
     "@spartacus/user": "~4.1.0-next.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@spartacus/schematics": "^4.1.0-next.0"
