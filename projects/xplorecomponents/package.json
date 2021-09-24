@@ -6,6 +6,21 @@
     "@angular/core": "^12.2.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@spartacus/asm": "~4.1.0-next.0",
+    "@spartacus/assets": "~4.1.0-next.0",
+    "@spartacus/cart": "~4.1.0-next.0",
+    "@spartacus/checkout": "~4.1.0-next.0",
+    "@spartacus/core": "~4.1.0-next.0",
+    "@spartacus/product": "~4.1.0-next.0",
+    "@spartacus/smartedit": "~4.1.0-next.0",
+    "@spartacus/storefinder": "~4.1.0-next.0",
+    "@spartacus/storefront": "~4.1.0-next.0",
+    "@spartacus/styles": "~4.1.0-next.0",
+    "@spartacus/tracking": "~4.1.0-next.0",
+    "@spartacus/user": "~4.1.0-next.0"
+  },
+  "devDependencies": {
+    "@spartacus/schematics": "^4.1.0-next.0"
   }
 }
