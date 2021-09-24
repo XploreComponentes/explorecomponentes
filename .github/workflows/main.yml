@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: 'Chromatic'
 
 # Controls when the workflow will run
 on:
@@ -15,32 +15,21 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+       
+   chromatic-deployment:
+    # Operating System
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Job steps
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-          
-      #Publish changes in Chromatic
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: yarn
+        # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
         uses: chromaui/action@v1
+        # Chromatic GitHub Action options
         with:
-          # Your github token
-          token:  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 
-
-          # Your chromatic project token
+          token: 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
+          # 👇 Chromatic projectToken, refer to the manage page to obtain it.
           projectToken: 1a3d53b676d3
+ 
