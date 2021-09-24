@@ -13,8 +13,8 @@ jobs:
       contents: read
     steps: 
       - uses: actions/checkout@v2
-      - uses: maks-stupak/gh-action-bump-version@v7.1.5
       - name: Update version in package.json
+        uses: maks-stupak/gh-action-bump-version@v7.1.5
         env:
           PACKAGEJSON_DIR:  'dist/xplorecomponents'
   publish-gpr:
