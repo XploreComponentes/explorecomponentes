@@ -1,0 +1,2476 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "AfterContentInit",
+            "id": "interface-AfterContentInit-9ab050033393d3438795b040b7df21e2",
+            "file": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface TestGeolocationBlockingModel extends CmsComponent {\n    country?: string;\n    countryLanguageDropDownData?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 166,
+            "methods": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 9,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ]
+        },
+        {
+            "name": "AfterContentInit",
+            "id": "interface-AfterContentInit-98615ffa312ef5a81b5b646dd9dc1a6f-1",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\nimport { Media } from \"@spartacus/storefront\";\n\nexport interface TestRegisterGeolocationModel extends CmsComponent {\n    country?: string;\n    content?: string;\n    logo?: Media;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 166,
+            "methods": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "AfterContentInit-1"
+        },
+        {
+            "name": "AfterContentInit",
+            "id": "interface-AfterContentInit-c6bd5eb0c8d838bfb5921aafaa4c5f82-2",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface TestRegisterGeolocationTopModel extends CmsComponent {\n    country?: string;\n    content?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 166,
+            "methods": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 9,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 2,
+            "duplicateName": "AfterContentInit-2"
+        },
+        {
+            "name": "TestGeolocationBlockingModel",
+            "id": "interface-TestGeolocationBlockingModel-9ab050033393d3438795b040b7df21e2",
+            "file": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface TestGeolocationBlockingModel extends CmsComponent {\n    country?: string;\n    countryLanguageDropDownData?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [
+                {
+                    "name": "country",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "countryLanguageDropDownData",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 164,
+            "methods": [],
+            "extends": "CmsComponent"
+        },
+        {
+            "name": "TestRegisterGeolocationModel",
+            "id": "interface-TestRegisterGeolocationModel-98615ffa312ef5a81b5b646dd9dc1a6f",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\nimport { Media } from \"@spartacus/storefront\";\n\nexport interface TestRegisterGeolocationModel extends CmsComponent {\n    country?: string;\n    content?: string;\n    logo?: Media;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [
+                {
+                    "name": "content",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "country",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "logo",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Media",
+                    "optional": true,
+                    "description": "",
+                    "line": 7
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 164,
+            "methods": [],
+            "extends": "CmsComponent"
+        },
+        {
+            "name": "TestRegisterGeolocationTopModel",
+            "id": "interface-TestRegisterGeolocationTopModel-c6bd5eb0c8d838bfb5921aafaa4c5f82",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface TestRegisterGeolocationTopModel extends CmsComponent {\n    country?: string;\n    content?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [
+                {
+                    "name": "content",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "country",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 164,
+            "methods": [],
+            "extends": "CmsComponent"
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-daef71d80ad91d3e4b3897971ee5d874",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'testing-spartacus-ng'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'testing-spartacus-ng';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<cx-storefront></cx-storefront>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-642c6c4e474cd5a0ac760dfda26b2fc9",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "What background color to use",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string"
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 322,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "Button contents",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string"
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "Is this the principal call to action on the page?",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean"
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "How large should the button be?",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-246e2a69dc126a3bd76c6328dd3b93e2",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 53,
+                    "type": ""
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 62,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 56,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 59,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-8f196770333aa216860a88c0b6b221aa",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 64,
+                    "type": ""
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 73,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 67,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 70,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nh2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\np {\n  margin: 1em 0;\n}\n\na {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nli {\n  margin-bottom: 8px;\n}\n\n.tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "TestGeolocationBlockingComponent",
+            "id": "component-TestGeolocationBlockingComponent-3ff36a98d9b748f1db99acbf9c0b5632",
+            "file": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-geolocation-blocking",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./test-geolocation-blocking.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "closeResult",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "component",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CmsComponentData<TestGeolocationBlockingModel>",
+                    "optional": false,
+                    "description": "",
+                    "line": 20,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "countryList",
+                    "defaultValue": "[{code: \"ja\", text: \"Japonés\"}, {code: \"en\", text: \"Inglés\"}, {code: \"de\", text: \"Holandés\"}, {code: \"zh\", text: \"Chino\"}]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Array<literal type>",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "countrySelected",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "language",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "languageService",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "LanguageService",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "dismiss",
+                    "args": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getDismissReason",
+                    "args": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "openModal",
+                    "args": [
+                        {
+                            "name": "content",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "content",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setLanguage",
+                    "args": [
+                        {
+                            "name": "country",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "country",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { LanguageService } from '@spartacus/core';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { TestGeolocationBlockingModel } from './test-geolocation-blocking.model';\n\n@Component({\n  selector: 'app-geolocation-blocking',\n  templateUrl: './test-geolocation-blocking.component.html'\n})\n\nexport class TestGeolocationBlockingComponent {\n\n  closeResult = '';\n  countryList: Array<{code: string, text: string}> = [{code: \"ja\", text: \"Japonés\"}, {code: \"en\", text: \"Inglés\"}, {code: \"de\", text: \"Holandés\"}, {code: \"zh\", text: \"Chino\"}];\n  countrySelected:string = '';\n  language: boolean = false;\n\n  constructor(\n    public component: CmsComponentData<TestGeolocationBlockingModel>,\n    private modalService: NgbModal,\n    public languageService: LanguageService) {}\n\n  openModal(content: any) {\n    this.modalService.open(content).result.then((result) => {\n      this.closeResult = `Closed with: ${result}`;\n    }, (reason) => {\n       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n    });\n  }\n\n  dismiss(reason?: any) {\n    this.modalService.dismissAll(reason);\n  }\n\n  private getDismissReason(reason: any): string {\n    if (reason === ModalDismissReasons.ESC) {\n      return 'by pressing ESC';\n    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n      return 'by clicking on backdrop';\n    } else {\n      return `with: ${reason}`;\n    }\n  }\n\n  setLanguage(country: string) {\n    this.countrySelected = country;\n    this.languageService.setActive(country);\n    this.modalService.dismissAll();\n  }\n\n}\n\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "component",
+                        "type": "CmsComponentData<TestGeolocationBlockingModel>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "modalService",
+                        "type": "NgbModal",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "languageService",
+                        "type": "LanguageService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 17,
+                "jsdoctags": [
+                    {
+                        "name": "component",
+                        "type": "CmsComponentData<TestGeolocationBlockingModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "modalService",
+                        "type": "NgbModal",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "languageService",
+                        "type": "LanguageService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n    <ng-template #modalData let-modal class=\"country-modal\">\n        <div class=\"modal-dialog\">\n          <div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <h4 class=\"modal-title\">Country Selector</h4>\n              <button type=\"button\" class=\"close modal-close\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n                <span aria-hidden=\"true\">×</span>\n              </button>\n            </div>\n            <div class=\"modal-body\">\n              <p>Current country by IP: {{ data.observable?.country }}</p>\n              <div ngbDropdown>\n                <button class=\"btn btn-warning\" id=\"countries\" \n                        ngbDropdownToggle>Select a country</button>\n                <div ngbDropdownMenu=\"countries\" class=\"dropdown-menu\">\n                  <button \n                    id=\"{{'Clear_' + indice}}\"\n                    class=\"button-dropdown\"\n                  \n                    ngbDropdownItem *ngFor=\"let countryLang of countryList; let indice=index\"\n                    (click) = \"setLanguage(countryLang.code)\"\n                  >\n                    {{ countryLang.text }}\n                  </button>\n                </div>\n              </div>\n            </div>\n            <div class=\"modal-footer\">\n              <button type=\"button\" class=\"btn btn-info btn-close-modal\" (click)=\"dismiss('Save click')\">Close</button>\n            </div>\n          </div>\n        </div>\n    </ng-template>\n    \n    <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(modalData)\">Show country selector</button>\n    <br>\n    <p>Country selected: <span class=\"country-selected\">{{ countrySelected }}</span></p>\n</ng-container>\n"
+        },
+        {
+            "name": "TestRegisterGeolocationComponent",
+            "id": "component-TestRegisterGeolocationComponent-cdcc85351325d22b0eeb78dac2e557ac",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-register-geolocation",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./test-register-geolocation.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "closeResult",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "component",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CmsComponentData<TestRegisterGeolocationModel>",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "changeLocation",
+                    "args": [
+                        {
+                            "name": "country",
+                            "type": "string | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "country",
+                            "type": "string | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "dismiss",
+                    "args": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "optional": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getDismissReason",
+                    "args": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "reason",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "openModal",
+                    "args": [
+                        {
+                            "name": "content",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "content",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { TestRegisterGeolocationModel } from './test-register-geolocation.model';\n\n@Component({\n  selector: 'app-register-geolocation',\n  templateUrl: './test-register-geolocation.component.html'\n})\nexport class TestRegisterGeolocationComponent {\n\n  closeResult = '';\n\n  constructor(\n    public component: CmsComponentData<TestRegisterGeolocationModel>,\n    private modalService: NgbModal\n  ) { }\n\n  openModal(content: any) {\n    this.modalService.open(content).result.then((result) => {\n      this.closeResult = `Closed with: ${result}`;\n    }, (reason) => {\n       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n    });\n  }\n\n  dismiss(reason?: any) {\n    this.modalService.dismissAll(reason);\n  }\n\n  private getDismissReason(reason: any): string {\n    if (reason === ModalDismissReasons.ESC) {\n      return 'by pressing ESC';\n    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n      return 'by clicking on backdrop';\n    } else {\n      return `with: ${reason}`;\n    }\n  }\n\n  changeLocation(country: string | undefined) {\n    this.modalService.dismissAll();\n    alert('Se ha cambiado su localización a ' + country);\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "component",
+                        "type": "CmsComponentData<TestRegisterGeolocationModel>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "modalService",
+                        "type": "NgbModal",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "component",
+                        "type": "CmsComponentData<TestRegisterGeolocationModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "modalService",
+                        "type": "NgbModal",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n    <ng-template #registerModal let-modal class=\"register-modal\">\n        <div class=\"modal-dialog\">\n          <div class=\"modal-content\">\n            <div class=\"modal-body\">\n                <button type=\"button\" class=\"close modal-close btn-close-modal\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n                    <span aria-hidden=\"true\">×</span>\n                  </button>\n              <div [innerHTML]=\"data.observable?.content\"></div>\n              <button class=\"btn btn-primary btn-block btn-change-location\" (click)=\"changeLocation(data.observable?.country)\">Cambiar localización a {{ data.observable?.country }}</button>\n            </div>\n          </div>\n        </div>\n    </ng-template>\n    \n    <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(registerModal)\">Open modal</button>\n    \n</ng-container>"
+        },
+        {
+            "name": "TestRegisterGeolocationTopComponent",
+            "id": "component-TestRegisterGeolocationTopComponent-54c1e2682ceecba61d5db28cac591a93",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-register-geolocation-top",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./test-register-geolocation-top.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "component",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CmsComponentData<TestRegisterGeolocationTopModel>",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "hide",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "changeLocation",
+                    "args": [
+                        {
+                            "name": "country",
+                            "type": "string | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "country",
+                            "type": "string | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "closeMsg",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { animate, state, style, transition, trigger } from '@angular/animations';\nimport { Component, OnInit } from '@angular/core';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { TestRegisterGeolocationTopModel } from './test-register-geolocation-top.model';\n\n@Component({\n  selector: 'app-register-geolocation-top',\n  templateUrl: './test-register-geolocation-top.component.html',\n  animations: [\n    trigger('hideMsg', [\n      state('hide', style({\n        opacity: 0\n    })),\n    state('show', style({\n        opacity: 1\n    })),\n      transition('* => *', animate(300))\n  ]),\n]\n})\nexport class TestRegisterGeolocationTopComponent {\n\n  hide = false;\n\n  constructor(\n    public component: CmsComponentData<TestRegisterGeolocationTopModel>\n  ) { }\n\n  get stateName() {\n    return this.hide ? 'hide' : 'show';\n  }\n\n  closeMsg() {\n    this.hide = !this.hide;\n  }\n\n  changeLocation(country: string | undefined) {\n    this.closeMsg();\n    alert('Se ha cambiado su localización a ' + country);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "component",
+                        "type": "CmsComponentData<TestRegisterGeolocationTopModel>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 23,
+                "jsdoctags": [
+                    {
+                        "name": "component",
+                        "type": "CmsComponentData<TestRegisterGeolocationTopModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "accessors": {
+                "stateName": {
+                    "name": "stateName",
+                    "getSignature": {
+                        "name": "stateName",
+                        "type": "",
+                        "returnType": "",
+                        "line": 29
+                    }
+                }
+            },
+            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n    <div class=\"location-top-msg\" [@hideMsg]=\"stateName\">\n        <div class=\"icon\">\n            <i class=\"fas fa-globe-americas\"></i>\n        </div>\n        <div class=\"right\">\n            <div>\n                <p [innerHTML]=\"data.observable?.content\"></p>\n            </div>\n            <div class=\"actions\">\n                <button \n                 class=\"btn btn-info btn-change-country\"\n                 (click)=changeLocation(data.observable?.country)>\n                    <i class=\"far fa-flag\"></i>\n                    {{ data.observable?.country }}\n                </button>\n                <button \n                 class=\"btn btn-light\"\n                 (click)=closeMsg()>\n                    Mantenerse en la página\n                </button>\n            </div>\n        </div>\n    </div>\n</ng-container>"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-7aa6a36583a94b0f672f5bac28be9230",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { HttpClientModule } from \"@angular/common/http\";\nimport { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { EffectsModule } from \"@ngrx/effects\";\nimport { StoreModule } from \"@ngrx/store\";\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { SpartacusModule } from './spartacus/spartacus.module';\n\n@NgModule({\n  declarations: [\n    AppComponent\n  ],\n  imports: [\n    BrowserModule,\n    HttpClientModule,\n    AppRoutingModule,\n    StoreModule.forRoot({}),\n    EffectsModule.forRoot([]),\n    SpartacusModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "SpartacusModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-47958a50d12d0f842d1ec584c86951e6",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule } from \"@angular/router\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    RouterModule.forRoot([], {\n      anchorScrolling: 'enabled',\n      relativeLinkResolution: 'corrected',\n      initialNavigation: 'enabled',\n    })\n  ]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AsmFeatureModule",
+            "id": "module-AsmFeatureModule-7ce5e566789671b61aa3a29f54819116",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/asm/asm-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { asmTranslationChunksConfig, asmTranslations } from \"@spartacus/asm/assets\";\nimport { AsmRootModule, ASM_FEATURE } from \"@spartacus/asm/root\";\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    AsmRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [ASM_FEATURE]: {\n        module: () =>\n          import('@spartacus/asm').then((m) => m.AsmModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: asmTranslations,\n      chunks: asmTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class AsmFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "CartQuickOrderFeatureModule",
+            "id": "module-CartQuickOrderFeatureModule-f21c7242077cbc561bf886a6a9983012",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/cart/cart-quick-order-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { quickOrderTranslationChunksConfig, quickOrderTranslations } from \"@spartacus/cart/quick-order/assets\";\nimport { CART_QUICK_ORDER_FEATURE, QuickOrderRootModule } from \"@spartacus/cart/quick-order/root\";\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    QuickOrderRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [CART_QUICK_ORDER_FEATURE]: {\n        module: () =>\n          import('@spartacus/cart/quick-order').then((m) => m.QuickOrderModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: quickOrderTranslations,\n      chunks: quickOrderTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class CartQuickOrderFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "CartSavedCartFeatureModule",
+            "id": "module-CartSavedCartFeatureModule-29d048dcce572af36e7bc4ed427bd4f8",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/cart/cart-saved-cart-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { savedCartTranslationChunksConfig, savedCartTranslations } from \"@spartacus/cart/saved-cart/assets\";\nimport { CART_SAVED_CART_FEATURE, SavedCartRootModule } from \"@spartacus/cart/saved-cart/root\";\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    SavedCartRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [CART_SAVED_CART_FEATURE]: {\n        module: () =>\n          import('@spartacus/cart/saved-cart').then((m) => m.SavedCartModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: savedCartTranslations,\n      chunks: savedCartTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class CartSavedCartFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "CheckoutFeatureModule",
+            "id": "module-CheckoutFeatureModule-b36629b0e59fc2031a665cf4221389fe",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/checkout/checkout-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { checkoutTranslationChunksConfig, checkoutTranslations } from \"@spartacus/checkout/assets\";\nimport { CheckoutRootModule, CHECKOUT_FEATURE } from \"@spartacus/checkout/root\";\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    CheckoutRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [CHECKOUT_FEATURE]: {\n        module: () =>\n          import('@spartacus/checkout').then((m) => m.CheckoutModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: checkoutTranslations,\n      chunks: checkoutTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class CheckoutFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "PersonalizationFeatureModule",
+            "id": "module-PersonalizationFeatureModule-edddac034dc4e03942735c8b7546fac0",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/tracking/personalization-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CmsConfig, provideConfig } from \"@spartacus/core\";\nimport { PersonalizationRootModule, PERSONALIZATION_FEATURE } from \"@spartacus/tracking/personalization/root\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    PersonalizationRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [PERSONALIZATION_FEATURE]: {\n        module: () =>\n          import('@spartacus/tracking/personalization').then((m) => m.PersonalizationModule),\n      },\n    }\n  })]\n})\nexport class PersonalizationFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "ProductVariantsFeatureModule",
+            "id": "module-ProductVariantsFeatureModule-a4ae76192cc1fe75c26bb3da0d947658",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/product/product-variants-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\nimport { productVariantsTranslationChunksConfig, productVariantsTranslations } from \"@spartacus/product/variants/assets\";\nimport { ProductVariantsRootModule, PRODUCT_VARIANTS_FEATURE } from \"@spartacus/product/variants/root\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    ProductVariantsRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [PRODUCT_VARIANTS_FEATURE]: {\n        module: () =>\n          import('@spartacus/product/variants').then((m) => m.ProductVariantsModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: productVariantsTranslations,\n      chunks: productVariantsTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class ProductVariantsFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SmartEditFeatureModule",
+            "id": "module-SmartEditFeatureModule-15d502a8cda4fb04385776c2fcfd085b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/smartedit/smart-edit-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CmsConfig, provideConfig } from \"@spartacus/core\";\nimport { SmartEditRootModule, SMART_EDIT_FEATURE } from \"@spartacus/smartedit/root\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    SmartEditRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [SMART_EDIT_FEATURE]: {\n        module: () =>\n          import('@spartacus/smartedit').then((m) => m.SmartEditModule),\n      },\n    }\n  })]\n})\nexport class SmartEditFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SpartacusConfigurationModule",
+            "id": "module-SpartacusConfigurationModule-ba4604fe544d6dee52e0add032a209f4",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/spartacus-configuration.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { translationChunksConfig, translations } from \"@spartacus/assets\";\nimport { FeaturesConfig, I18nConfig, OccConfig, provideConfig, SiteContextConfig } from \"@spartacus/core\";\nimport { defaultCmsContentProviders, layoutConfig, mediaConfig } from \"@spartacus/storefront\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n  ],\n  providers: [provideConfig(layoutConfig), provideConfig(mediaConfig), ...defaultCmsContentProviders, provideConfig(<OccConfig>{\n    backend: {\n      occ: {\n        baseUrl: 'https://localhost:9002',\n      }\n    },\n  }), provideConfig(<SiteContextConfig>{\n    context: {\n      currency: ['USD'],\n      language: ['en'],\n    },\n  }), provideConfig(<I18nConfig>{\n    i18n: {\n      resources: translations,\n      chunks: translationChunksConfig,\n      fallbackLang: 'en'\n    },\n  }), provideConfig(<FeaturesConfig>{\n    features: {\n      level: '4.1'\n    }\n  })]\n})\nexport class SpartacusConfigurationModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SpartacusFeaturesModule",
+            "id": "module-SpartacusFeaturesModule-46f12f8eebdcc18201963282ce3492fc",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/spartacus-features.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { AnonymousConsentsModule, AuthModule, CartModule, CartOccModule, CostCenterOccModule, ExternalRoutesModule, OrderOccModule, ProductModule, ProductOccModule, UserOccTransitionalModule, UserTransitionalModule } from \"@spartacus/core\";\nimport { AddressBookModule, AnonymousConsentManagementBannerModule, AnonymousConsentsDialogModule, BannerCarouselModule, BannerModule, BreadcrumbModule, CartComponentModule, CartPageEventModule, CategoryNavigationModule, CmsParagraphModule, ConsentManagementModule, FooterNavigationModule, HamburgerMenuModule, HomePageEventModule, LinkModule, LoginRouteModule, LogoutModule, MyCouponsModule, MyInterestsModule, NavigationEventModule, NavigationModule, NotificationPreferenceModule, OrderCancellationModule, OrderDetailsModule, OrderHistoryModule, OrderReturnModule, PaymentMethodsModule, ProductCarouselModule, ProductDetailsPageModule, ProductFacetNavigationModule, ProductImagesModule, ProductIntroModule, ProductListingPageModule, ProductListModule, ProductPageEventModule, ProductReferencesModule, ProductSummaryModule, ProductTabsModule, ReplenishmentOrderDetailsModule, ReplenishmentOrderHistoryModule, ReturnRequestDetailModule, ReturnRequestListModule, SearchBoxModule, SiteContextSelectorModule, StockNotificationModule, TabParagraphContainerModule, WishListModule } from \"@spartacus/storefront\";\nimport { UserFeatureModule } from './features/user/user-feature.module';\nimport { PersonalizationFeatureModule } from './features/tracking/personalization-feature.module';\nimport { StoreFinderFeatureModule } from './features/storefinder/store-finder-feature.module';\nimport { SmartEditFeatureModule } from './features/smartedit/smart-edit-feature.module';\nimport { ProductVariantsFeatureModule } from './features/product/product-variants-feature.module';\nimport { CheckoutFeatureModule } from './features/checkout/checkout-feature.module';\nimport { CartSavedCartFeatureModule } from './features/cart/cart-saved-cart-feature.module';\nimport { CartQuickOrderFeatureModule } from './features/cart/cart-quick-order-feature.module';\nimport { AsmFeatureModule } from './features/asm/asm-feature.module';\n\n@NgModule({\n  declarations: [],\n  imports: [\n    // Auth Core\n    AuthModule.forRoot(),\n    LogoutModule,\n    LoginRouteModule,\n    // Basic Cms Components\n    HamburgerMenuModule,\n    SiteContextSelectorModule,\n    LinkModule,\n    BannerModule,\n    CmsParagraphModule,\n    TabParagraphContainerModule,\n    BannerCarouselModule,\n    CategoryNavigationModule,\n    NavigationModule,\n    FooterNavigationModule,\n    BreadcrumbModule,\n    // User Core,\n    UserTransitionalModule,\n    UserOccTransitionalModule,\n    // User UI,\n    AddressBookModule,\n    PaymentMethodsModule,\n    NotificationPreferenceModule,\n    MyInterestsModule,\n    StockNotificationModule,\n    ConsentManagementModule,\n    MyCouponsModule,\n    // Anonymous Consents Core,\n    AnonymousConsentsModule.forRoot(),\n    // Anonymous Consents UI,\n    AnonymousConsentsDialogModule,\n    AnonymousConsentManagementBannerModule,\n    // Product Core,\n    ProductModule.forRoot(),\n    ProductOccModule,\n    // Product UI,\n    ProductDetailsPageModule,\n    ProductListingPageModule,\n    ProductListModule,\n    SearchBoxModule,\n    ProductFacetNavigationModule,\n    ProductTabsModule,\n    ProductCarouselModule,\n    ProductReferencesModule,\n    ProductImagesModule,\n    ProductSummaryModule,\n    ProductIntroModule,\n    // Cart Core,\n    CartModule.forRoot(),\n    CartOccModule,\n    // Cart UI,\n    CartComponentModule,\n    WishListModule,\n    CostCenterOccModule,\n    // Order,\n    OrderHistoryModule,\n    OrderDetailsModule,\n    OrderCancellationModule,\n    OrderReturnModule,\n    ReturnRequestListModule,\n    ReturnRequestDetailModule,\n    ReplenishmentOrderHistoryModule,\n    ReplenishmentOrderDetailsModule,\n    OrderOccModule,\n    // Page Events,\n    NavigationEventModule,\n    HomePageEventModule,\n    CartPageEventModule,\n    ProductPageEventModule,\n    // External routes,\n    ExternalRoutesModule.forRoot(),\n    UserFeatureModule,\n    PersonalizationFeatureModule,\n    StoreFinderFeatureModule,\n    SmartEditFeatureModule,\n    ProductVariantsFeatureModule,\n    CheckoutFeatureModule,\n    CartSavedCartFeatureModule,\n    CartQuickOrderFeatureModule,\n    AsmFeatureModule,\n  ]\n})\nexport class SpartacusFeaturesModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AsmFeatureModule"
+                        },
+                        {
+                            "name": "CartQuickOrderFeatureModule"
+                        },
+                        {
+                            "name": "CartSavedCartFeatureModule"
+                        },
+                        {
+                            "name": "CheckoutFeatureModule"
+                        },
+                        {
+                            "name": "PersonalizationFeatureModule"
+                        },
+                        {
+                            "name": "ProductVariantsFeatureModule"
+                        },
+                        {
+                            "name": "SmartEditFeatureModule"
+                        },
+                        {
+                            "name": "StoreFinderFeatureModule"
+                        },
+                        {
+                            "name": "UserFeatureModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SpartacusModule",
+            "id": "module-SpartacusModule-7626fc18bc95457324c695eae93b2d3c",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/spartacus.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BaseStorefrontModule } from \"@spartacus/storefront\";\nimport { SpartacusConfigurationModule } from './spartacus-configuration.module';\nimport { SpartacusFeaturesModule } from './spartacus-features.module';\n\n@NgModule({\n  declarations: [],\n  imports: [\n\n    SpartacusFeaturesModule,\n    SpartacusConfigurationModule,\n    BaseStorefrontModule\n  ],\n  exports: [BaseStorefrontModule]\n})\nexport class SpartacusModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "SpartacusConfigurationModule"
+                        },
+                        {
+                            "name": "SpartacusFeaturesModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "StoreFinderFeatureModule",
+            "id": "module-StoreFinderFeatureModule-c30bcc4c783794f2a6a3b4515791481b",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/storefinder/store-finder-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\nimport { storeFinderTranslationChunksConfig, storeFinderTranslations } from \"@spartacus/storefinder/assets\";\nimport { StoreFinderRootModule, STORE_FINDER_FEATURE } from \"@spartacus/storefinder/root\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    StoreFinderRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [STORE_FINDER_FEATURE]: {\n        module: () =>\n          import('@spartacus/storefinder').then((m) => m.StoreFinderModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: storeFinderTranslations,\n      chunks: storeFinderTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class StoreFinderFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TestGeolocationBlockingModule",
+            "id": "module-TestGeolocationBlockingModule-4f694e231be92a9259607bffecdb6d5a",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { TestGeolocationBlockingComponent } from \"./test-geolocation-blocking\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\n\n@NgModule({\n    declarations: [TestGeolocationBlockingComponent],\n    exports: [TestGeolocationBlockingComponent],\n    entryComponents: [TestGeolocationBlockingComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n    I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            GeolocationBlockingComponent: {\n              component: TestGeolocationBlockingComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    providers: [\n      LanguageService,\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestGeolocationBlockingModule { }",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TestGeolocationBlockingComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TestGeolocationBlockingComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TestRegisterGeolocationModule",
+            "id": "module-TestRegisterGeolocationModule-d7fdabb9da2805345c62c5f121451790",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\nimport { TestRegisterGeolocationComponent } from \"./test-register-geolocation.component\";\n\n@NgModule({\n    declarations: [TestRegisterGeolocationComponent],\n    exports: [TestRegisterGeolocationComponent],\n    entryComponents: [TestRegisterGeolocationComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n    I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            RegisterGeolocationComponent: {\n              component: TestRegisterGeolocationComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    providers: [\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestRegisterGeolocationModule { }",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TestRegisterGeolocationComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TestRegisterGeolocationComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "TestRegisterGeolocationTopModule",
+            "id": "module-TestRegisterGeolocationTopModule-4f8f24a6de03e5545e41669dfab39b80",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.module.ts",
+            "methods": [],
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\nimport { TestRegisterGeolocationTopComponent } from \"./test-register-geolocation-top.component\";\n\n@NgModule({\n    declarations: [TestRegisterGeolocationTopComponent],\n    exports: [TestRegisterGeolocationTopComponent],\n    entryComponents: [TestRegisterGeolocationTopComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n    I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            RegisterGeolocationTopComponent: {\n              component: TestRegisterGeolocationTopComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    providers: [\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestRegisterGeolocationTopModule { }",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "TestRegisterGeolocationTopComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TestRegisterGeolocationTopComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UserFeatureModule",
+            "id": "module-UserFeatureModule-c33bba7658e328b40563af514b917fe7",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/spartacus/features/user/user-feature.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CmsConfig, I18nConfig, provideConfig } from \"@spartacus/core\";\nimport { userAccountTranslationChunksConfig, userAccountTranslations } from \"@spartacus/user/account/assets\";\nimport { UserAccountRootModule, USER_ACCOUNT_FEATURE } from \"@spartacus/user/account/root\";\nimport { userProfileTranslationChunksConfig, userProfileTranslations } from \"@spartacus/user/profile/assets\";\nimport { UserProfileRootModule, USER_PROFILE_FEATURE } from \"@spartacus/user/profile/root\";\n\n@NgModule({\n  declarations: [],\n  imports: [\n    UserAccountRootModule,\n    UserProfileRootModule\n  ],\n  providers: [provideConfig(<CmsConfig>{\n    featureModules: {\n      [USER_ACCOUNT_FEATURE]: {\n        module: () =>\n          import('@spartacus/user/account').then((m) => m.UserAccountModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: userAccountTranslations,\n      chunks: userAccountTranslationChunksConfig,\n    },\n  }),\n  provideConfig(<CmsConfig>{\n    featureModules: {\n      [USER_PROFILE_FEATURE]: {\n        module: () =>\n          import('@spartacus/user/profile').then((m) => m.UserProfileModule),\n      },\n    }\n  }),\n  provideConfig(<I18nConfig>{\n    i18n: {\n      resources: userProfileTranslations,\n      chunks: userProfileTranslationChunksConfig,\n    },\n  })\n  ]\n})\nexport class UserFeatureModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/xplorecomponents/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/xplorecomponents/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "projects/xplorecomponents/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/xplorecomponents/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/xplorecomponents/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "AfterContentInit",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TestGeolocationBlockingModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TestGeolocationBlockingComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TestRegisterGeolocationTopComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "AfterContentInit",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TestRegisterGeolocationTopModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TestRegisterGeolocationComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "AfterContentInit",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TestRegisterGeolocationModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
