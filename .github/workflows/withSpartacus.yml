@@ -19,7 +19,7 @@ jobs:
         uses:  'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGEJSON_DIR:  'dist/xplorecomponents'
+          PACKAGEJSON_DIR:  'projects/xplorecomponents/'
         with:
           minor-wording:  'minor,add,Adds,new'
           major-wording:  'major,MAJOR,cut-major'
