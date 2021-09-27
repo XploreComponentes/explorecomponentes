@@ -13,8 +13,9 @@ jobs:
       contents: read
     steps: 
       - uses: actions/checkout@v2
-      - name: Update version in package.json
+      - name: List directory active
         run: ls -R
+      - name: Update version in package.json
         uses:  'phips28/gh-action-bump-version@master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
