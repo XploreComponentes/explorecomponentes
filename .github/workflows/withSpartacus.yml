@@ -26,6 +26,7 @@ jobs:
           patch-wording:  'patch,fixes'
 
   publish-gpr:
+    needs: [update-version]
     runs-on: ubuntu-latest
     permissions:
       packages: write
