@@ -21,7 +21,7 @@ jobs:
       contents: read
     steps:
       - name: Install dependencies
-        working-direcotry: projects/xplorecomponents
+        working-directory: projects/xplorecomponents
         run: npm install
       - name: Build package
         working-directory: projects/xplorecomponents
