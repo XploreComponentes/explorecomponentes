@@ -16,10 +16,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #33b5e5;
+        background-color: $info;
         line-height: 43px;
         font-size: 20px;
-        color: rgba(0,0,0,0.5);
+        color: $text;
         padding: 8px;
     }
     .right {
@@ -28,8 +28,8 @@
         align-items: center;
         justify-content: space-between;
         padding: 12px 15px;
-        background-color: white;
-        color: black;
+        background-color: $background;
+        color: $text;
 
         p {
             margin: 0;
