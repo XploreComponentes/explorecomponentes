@@ -11,6 +11,9 @@ jobs:
     permissions:
       contents: read
     steps:
+      - name: Try test
+        working-directory: projects/xplorecomponents
+        run: ls -R
       - name: Launch test
         working-directory: projects/xplorecomponents
         run: npm run test
