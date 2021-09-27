@@ -111,7 +111,7 @@ describe('GeolocationComponent', () => {
             fixture.detectChanges();
 
             fixture.whenStable().then(() => {
-                expect(component.closeResult).toBe('Dismissed by clicking on backdrop');
+                expect(component.closeResult).toBe('Dismissed by clicking on a backdrop');
             });
         }));
 
