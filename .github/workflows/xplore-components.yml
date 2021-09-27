@@ -12,9 +12,9 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v2
-      - name: Try test
+      - name: Install dependencies
         working-directory: projects/xplorecomponents
-        run: ls -R
+        run: npm install
       - name: Launch test
         working-directory: projects/xplorecomponents
         run: npm run test
