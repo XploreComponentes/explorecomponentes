@@ -18,7 +18,7 @@ jobs:
       - name: Update version in package.json
         uses:  'phips28/gh-action-bump-version@master'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GIT_TOKEN }}
           PACKAGEJSON_DIR:  'projects/xplorecomponents/'
         with:
           minor-wording:  'minor,add,Adds,new'
