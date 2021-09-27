@@ -1,23 +1,23 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RegisterGeolocationTop } from './register-geolocation-top.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RegisterGeolocationTopComponent } from './register-geolocation-top.component';
 
 export default {
     title: 'Register Geolocation Top',
     decorators: [
         moduleMetadata({
             declarations: [
-              RegisterGeolocationTop
+              RegisterGeolocationTopComponent
             ],
             imports: [NgbModule, NgbDropdownModule, BrowserAnimationsModule],
         })
     ]
 };
 
-const Template: Story<RegisterGeolocationTop> = args => ({
-    component: RegisterGeolocationTop,
+const Template: Story<RegisterGeolocationTopComponent> = args => ({
+    component: RegisterGeolocationTopComponent,
     props: {
       ...args,
     },

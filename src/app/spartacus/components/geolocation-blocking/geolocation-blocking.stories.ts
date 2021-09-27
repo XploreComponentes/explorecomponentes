@@ -1,5 +1,5 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
-import { GeolocationBlockingModal } from './geolocation-blocking.component';
+import { GeolocationBlockingComponent } from './geolocation-blocking.component';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,15 +8,15 @@ export default {
     decorators: [
         moduleMetadata({
             declarations: [
-                GeolocationBlockingModal
+              GeolocationBlockingComponent
             ],
             imports: [NgbModule, NgbDropdownModule],
         })
     ]
 };
 
-const Template: Story<GeolocationBlockingModal> = args => ({
-    component: GeolocationBlockingModal,
+const Template: Story<GeolocationBlockingComponent> = args => ({
+    component: GeolocationBlockingComponent,
     props: {
       ...args,
     },

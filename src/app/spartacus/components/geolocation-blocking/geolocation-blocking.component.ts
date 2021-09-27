@@ -1,24 +1,29 @@
 import { Component, Input } from '@angular/core';
 import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { LanguageService } from '@spartacus/core';
+import { CmsComponentData } from '@spartacus/storefront';
+import { GeolocationBlockingModel } from './geolocation-blocking.model';
 
 @Component({
     selector: 'geolocation-blocking-modal',
     templateUrl: './geolocation-blocking.component.html'
   })
-  export class GeolocationBlockingModal {
+  export class GeolocationBlockingComponent {
 
     @Input()
     currentCountry?: string;
 
-    closeResult?: string;
-    countrySelected?: string;
+    closeResult = '';
     countryList: Array<{code: string, text: string}> = [{code: "ja", text: "Japonés"}, {code: "en", text: "Inglés"}, {code: "de", text: "Holandés"}, {code: "zh", text: "Chino"}];
-
+    countrySelected:string = '';
+    language: boolean = false;
 
     constructor(
-        private modalService: NgbModal
-        ) {}
-  
+        public component: CmsComponentData<GeolocationBlockingModel>,
+        private modalService: NgbModal,
+        public languageService: LanguageService) {}
+
+
         openModal(content: any) {
       this.modalService.open(content).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;
@@ -42,6 +47,8 @@ import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
     }
 
     setLanguage(country: string) {
+      this.countrySelected = country;
+      this.languageService.setActive(country);
       this.countrySelected = 'Country changed to ' + country;
       this.modalService.dismissAll('By changing country');
     }

@@ -1,6 +1,8 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, Input } from '@angular/core';
 import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { CmsComponentData } from '@spartacus/storefront';
+import { RegisterGeolocationTopModel } from './register-geolocation-top.model';
 
 @Component({
     selector: 'register-geolocation-top',
@@ -19,7 +21,7 @@ import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
   ]
   })
 
-  export class RegisterGeolocationTop {
+  export class RegisterGeolocationTopComponent {
 
     @Input()
     currentCountry?: string;
@@ -32,7 +34,9 @@ import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
     countrySelected?: string;
 
-  constructor() {}
+  constructor(
+    public component: CmsComponentData<RegisterGeolocationTopModel>
+  ) {}
 
     get stateName() {
       return this.hide ? 'hide' : 'show';

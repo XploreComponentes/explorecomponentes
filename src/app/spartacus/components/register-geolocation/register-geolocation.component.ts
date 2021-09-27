@@ -1,11 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { CmsComponentData } from '@spartacus/storefront';
+import { RegisterGeolocationModel } from './register-geolocation.model';
 
 @Component({
     selector: 'register-geolocation-modal',
     templateUrl: './register-geolocation.component.html'
   })
-  export class RegisterGeolocationModal {
+  export class RegisterGeolocationComponent {
 
     @Input()
     currentCountry?: string;
@@ -14,11 +16,9 @@ import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
     modalBody?: string;
 
     closeResult?: string;
-    countrySelected?: string;
-    countryList: Array<{code: string, text: string}> = [{code: "ja", text: "Japonés"}, {code: "en", text: "Inglés"}, {code: "de", text: "Holandés"}, {code: "zh", text: "Chino"}];
-
 
     constructor(
+      public component: CmsComponentData<RegisterGeolocationModel>,
         private modalService: NgbModal
         ) {}
   
@@ -45,8 +45,8 @@ import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
     }
 
     changeLocation(country?: string) {
-      this.countrySelected = 'Country changed to ' + country;
       this.modalService.dismissAll('By changing country');
+      alert('Se ha cambiado su localización a ' + country);
     }
   }
 
