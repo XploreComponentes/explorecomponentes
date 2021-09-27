@@ -33,11 +33,11 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Publish to npmJS
-        uses: actions/checkout@v2
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: 12
+      - name: Publish to npmJS
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
@@ -46,8 +46,8 @@ jobs:
     needs: build-package
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Publish to Chromatic
-        uses: actions/checkout@v1
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.CHROMATIC_TOKEN }}
