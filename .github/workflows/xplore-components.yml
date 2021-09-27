@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: read
     steps:
+      - uses: actions/checkout@v2
       - name: Try test
         working-directory: projects/xplorecomponents
         run: ls -R
