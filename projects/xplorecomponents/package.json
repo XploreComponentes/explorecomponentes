@@ -11,8 +11,5 @@
   "devDependencies": {
     "jasmine-parameterized": "^0.4.0",
     "@spartacus/schematics": "^4.1.0-next.0"
-  },
-  "scripts": {
-    "test": "ng test xplorecomponents"
   }
 }

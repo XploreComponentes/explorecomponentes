@@ -13,10 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        working-directory: projects/xplorecomponents
         run: npm install
       - name: Launch test
-        working-directory: projects/xplorecomponents
         run: npm run test
   build-package:
     needs: test-package
@@ -25,11 +23,9 @@ jobs:
       contents: read
     steps:
       - name: Install dependencies
-        working-directory: projects/xplorecomponents
         run: npm install
       - name: Build package
-        working-directory: projects/xplorecomponents
-        run: npm run test
+        run: npm run build:ci
 
   publish-npmjs:
     needs: build-package
