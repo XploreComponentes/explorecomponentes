@@ -19,6 +19,7 @@ jobs:
   build-package:
     needs: test-package
     runs-on: ubuntu-latest
+    working-directory: .
     permissions:
       contents: read
     steps:
