@@ -24,8 +24,10 @@ jobs:
     steps:
       - name: Install dependencies
         run: npm install
+        working-directory: .
       - name: Build package
         run: npm run build:ci
+        working-directory: .
 
   publish-npmjs:
     needs: build-package
