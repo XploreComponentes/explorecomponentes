@@ -22,6 +22,8 @@ jobs:
     permissions:
       contents: read
     steps:
+      - name: Show directories
+        run: ls -la
       - name: Install dependencies
         run: npm install
         working-directory: .
