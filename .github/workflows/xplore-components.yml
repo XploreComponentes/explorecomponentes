@@ -6,20 +6,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-package:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Launch test
-        run: npm run test:headless
+  # test-package:
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Install dependencies
+  #       run: npm install
+  #     - name: Launch test
+  #       run: npm run test:headless
   build-package:
     needs: test-package
     runs-on: ubuntu-latest
-    working-directory: .
     permissions:
       contents: read
     steps:
