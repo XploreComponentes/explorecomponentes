@@ -16,21 +16,9 @@ jobs:
         run: npm install
       - name: Launch test
         run: npm run test:headless
-        
-  build-package:
-    needs: test-package
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Build package
-        run: npm run build:ci
 
   publish-npmjs:
-    needs: build-package
+    needs: test-package
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -39,6 +27,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
+      - name: Install dependencies
+        run: npm install
+      - name: Build package
+        run: npm run build:ci
       - name: Publish to npmJS
         uses: JS-DevTools/npm-publish@v1
         with:
@@ -46,10 +38,14 @@ jobs:
           package: dist/xplorecomponents/package.json 
 
   publish-chromatic:
-    needs: build-package
+    needs: test-package
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: npm install
+      - name: Build package
+        run: npm run build:ci
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
