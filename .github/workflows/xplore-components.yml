@@ -28,6 +28,7 @@ jobs:
           path: node_modules/
 
   test-package:
+    needs: build-package
     runs-on: ubuntu-latest
     permissions:
       contents: read
