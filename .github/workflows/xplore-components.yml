@@ -15,12 +15,12 @@ jobs:
       - name: Cache NPM dependencies
         id: cache-build
         uses: actions/cache@v2
-          with:
-            path: |
-              ~/dist
-              ~/node_modules
-              ~/.npm
-            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+        with:
+          path: |
+            ~/dist
+            ~/node_modules
+            ~/.npm
+          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - name: Install dependencies
         run: npm install
       - name: Launch test
