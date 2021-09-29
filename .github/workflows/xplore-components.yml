@@ -22,7 +22,7 @@ jobs:
           name: components-build
           path: dist/
       - name: Zip node_modules before upload
-        run: zip node_modules.zip node_modules/
+        run: zip -r node_modules.zip node_modules/
       - name: Upload node_modules
         uses: actions/upload-artifact@v2
         with:
