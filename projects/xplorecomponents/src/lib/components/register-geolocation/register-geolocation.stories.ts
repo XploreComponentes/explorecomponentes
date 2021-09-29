@@ -1,22 +1,22 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RegisterGeolocationModal } from './register-geolocation.component';
+import { RegisterGeolocationComponent } from './register-geolocation.component';
 
 export default {
     title: 'Register Geolocation Modal',
     decorators: [
         moduleMetadata({
             declarations: [
-                RegisterGeolocationModal
+              RegisterGeolocationComponent
             ],
             imports: [NgbModule, NgbDropdownModule],
         })
     ]
 };
 
-const Template: Story<RegisterGeolocationModal> = args => ({
-    component: RegisterGeolocationModal,
+const Template: Story<RegisterGeolocationComponent> = args => ({
+    component: RegisterGeolocationComponent,
     props: {
       ...args,
     },

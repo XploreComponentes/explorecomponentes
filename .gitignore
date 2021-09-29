@@ -45,3 +45,4 @@ testem.log
 Thumbs.db
 
 /projects/xplorecomponents/node_modules
+/storybook-static
