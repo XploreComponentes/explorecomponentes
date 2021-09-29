@@ -12,17 +12,31 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v2
-      - name: Cache NPM dependencies
-        id: cache-build
-        uses: actions/cache@v2
-          with:
-            path: |
-              ~/dist
-              ~/node_modules
-              ~/.npm
-            key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - name: Install dependencies
         run: npm install
+      - name: Build project
+        run: npm run build:ci
+      - name: Upload build
+        uses: actions/upload-artifact@v2
+        with:
+          name: components-build
+          path: dist/
+      - name: Upload node_modules
+        uses: actions/upload-artifact@v2
+        with:
+          name: components-node_modules
+          path: node_modules/
+
+  test-package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download node_modules
+        uses: actions/download-artifact@v2
+        with:
+          name: components-node_modules
       - name: Launch test
         run: npm run test:headless
 
@@ -36,12 +50,14 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-      - name: Install dependencies
-        if: steps.cache-build.outputs.cache-hit != 'true'
-        run: npm install
-      - name: Build package
-        if: steps.cache-build.outputs.cache-hit != 'true'
-        run: npm run build:ci
+      - name: Download node_modules
+        uses: actions/download-artifact@v2
+        with:
+          name: components-node_modules
+      - name: Download build
+        uses: actions/download-artifact@v2
+        with:
+          name: components-build
       - name: Publish to npmJS
         uses: JS-DevTools/npm-publish@v1
         with:
