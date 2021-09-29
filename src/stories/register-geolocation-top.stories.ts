@@ -1,9 +1,9 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
-import { CmsComponentData } from '@spartacus/storefront';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RegisterGeolocationTopComponent } from './register-geolocation-top.component';
+import { CmsComponentData } from '@spartacus/storefront';
+import { RegisterGeolocationTopComponent } from '../../projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component';
 
 export default {
     title: 'Register Geolocation Top',
