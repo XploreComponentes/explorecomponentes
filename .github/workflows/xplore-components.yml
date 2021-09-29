@@ -21,11 +21,13 @@ jobs:
         with:
           name: components-build
           path: dist/
+      - name: Zip node_modules before upload
+        run: zip node_modules/
       - name: Upload node_modules
         uses: actions/upload-artifact@v2
         with:
           name: components-node_modules
-          path: node_modules/
+          path: node_modules.zip
 
   test-package:
     needs: build-package
@@ -38,6 +40,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: components-node_modules
+      - name: Unzip node_modules
+        run: unzip node_modules.zip
       - name: Launch test
         run: npm run test:headless
 
@@ -55,6 +59,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: components-node_modules
+      - name: Unzip node_modules
+        run: unzip node_modules.zip
       - name: Download build
         uses: actions/download-artifact@v2
         with:
