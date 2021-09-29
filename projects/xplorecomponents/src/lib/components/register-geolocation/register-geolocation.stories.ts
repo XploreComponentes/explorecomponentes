@@ -1,4 +1,5 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
+import { CmsComponentData } from '@spartacus/storefront';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RegisterGeolocationComponent } from './register-geolocation.component';
@@ -10,7 +11,7 @@ export default {
             declarations: [
               RegisterGeolocationComponent
             ],
-            imports: [NgbModule, NgbDropdownModule],
+            imports: [NgbModule, NgbDropdownModule, CmsComponentData],
         })
     ]
 };

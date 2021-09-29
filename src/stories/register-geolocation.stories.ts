@@ -1,23 +1,23 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
-import { GeolocationBlockingComponent } from './geolocation-blocking.component';
 import { CmsComponentData } from '@spartacus/storefront';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RegisterGeolocationComponent } from '../../projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component';
 
 export default {
-    title: 'Geolocation Blocking Modal',
+    title: 'Register Geolocation Modal',
     decorators: [
         moduleMetadata({
             declarations: [
-              GeolocationBlockingComponent
+              RegisterGeolocationComponent
             ],
             imports: [NgbModule, NgbDropdownModule, CmsComponentData],
         })
     ]
 };
 
-const Template: Story<GeolocationBlockingComponent> = args => ({
-    component: GeolocationBlockingComponent,
+const Template: Story<RegisterGeolocationComponent> = args => ({
+    component: RegisterGeolocationComponent,
     props: {
       ...args,
     },
@@ -25,5 +25,6 @@ const Template: Story<GeolocationBlockingComponent> = args => ({
   
   export const Default = Template.bind({});
   Default.args = {
-    currentCountry: 'Spain'
+    currentCountry: 'Spain',
+    modalBody: 'Change your country location'
   };
