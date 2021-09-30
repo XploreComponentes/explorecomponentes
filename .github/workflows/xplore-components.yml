@@ -12,72 +12,19 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Install dependencies
         run: npm install
       - name: Build project
         run: npm run build:ci
-      - name: Upload build
-        uses: actions/upload-artifact@v2
-        with:
-          name: components-build
-          path: dist/
-      - name: Zip node_modules before upload
-        run: zip -r node_modules.zip node_modules/
-      - name: Upload node_modules
-        uses: actions/upload-artifact@v2
-        with:
-          name: components-node_modules
-          path: node_modules.zip
-
-  test-package:
-    needs: build-package
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v2
-      - name: Download node_modules
-        uses: actions/download-artifact@v2
-        with:
-          name: components-node_modules
-      - name: Unzip node_modules
-        run: unzip node_modules.zip
       - name: Launch test
         run: npm run test:headless
-
-  publish-npmjs:
-    needs: test-package
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 12
-      - name: Download node_modules
-        uses: actions/download-artifact@v2
-        with:
-          name: components-node_modules
-      - name: Unzip node_modules
-        run: unzip node_modules.zip
-      - name: Download build
-        uses: actions/download-artifact@v2
-        with:
-          name: components-build
       - name: Publish to npmJS
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
           package: dist/xplorecomponents/package.json 
-
-  publish-chromatic:
-    needs: test-package
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Install dependencies
-        run: npm install
       - name: Publish to Chromatic
         uses: chromaui/action@v1
         with:
