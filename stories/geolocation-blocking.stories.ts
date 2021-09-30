@@ -1,8 +1,10 @@
 import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
-import { GeolocationBlockingComponent } from './geolocation-blocking.component';
+import { GeolocationBlockingComponent } from '../projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component';
 import { CmsComponentData } from '@spartacus/storefront';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
+import { LanguageService } from '@spartacus/core';
 
 export default {
     title: 'Geolocation Blocking Modal',
@@ -11,7 +13,11 @@ export default {
             declarations: [
               GeolocationBlockingComponent
             ],
-            imports: [NgbModule, NgbDropdownModule, CmsComponentData],
+            imports: [NgbModule, NgbDropdownModule, CommonModule],
+            providers: [
+              CmsComponentData,
+              LanguageService
+            ]
         })
     ]
 };

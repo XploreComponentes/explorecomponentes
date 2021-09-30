@@ -3,7 +3,8 @@ import { CmsComponentData } from '@spartacus/storefront';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RegisterGeolocationTopComponent } from './register-geolocation-top.component';
+import { RegisterGeolocationTopComponent } from '../projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component';
+import { CommonModule } from '@angular/common';
 
 export default {
     title: 'Register Geolocation Top',
@@ -12,7 +13,10 @@ export default {
             declarations: [
               RegisterGeolocationTopComponent
             ],
-            imports: [NgbModule, NgbDropdownModule, BrowserAnimationsModule, CmsComponentData],
+            imports: [NgbModule, NgbDropdownModule, BrowserAnimationsModule, CommonModule],
+            providers: [
+              CmsComponentData
+            ]
         })
     ]
 };

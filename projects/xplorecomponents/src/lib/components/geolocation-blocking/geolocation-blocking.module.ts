@@ -15,7 +15,7 @@ import { GeolocationBlockingComponent } from "./geolocation-blocking.component";
     imports: [
         CommonModule,
         NgbModule,
-    I18nModule,
+        I18nModule,
         ConfigModule.withConfig({
           cmsComponents: {
             GeolocationBlockingComponent: {

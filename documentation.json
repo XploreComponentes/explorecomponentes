@@ -27,34 +27,7 @@
         },
         {
             "name": "AfterContentInit",
-            "id": "interface-AfterContentInit-fad3f9fff7f5da575c4d96232bf4aff3-1",
-            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts",
-            "deprecated": false,
-            "deprecationMessage": "",
-            "type": "interface",
-            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface RegisterGeolocationTopModel extends CmsComponent {\n    country?: string;\n    content?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
-            "properties": [],
-            "indexSignatures": [],
-            "kind": 166,
-            "methods": [
-                {
-                    "name": "ngAfterContentInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 9,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "isDuplicate": true,
-            "duplicateId": 1,
-            "duplicateName": "AfterContentInit-1"
-        },
-        {
-            "name": "AfterContentInit",
-            "id": "interface-AfterContentInit-6dc79a9e900524f5a873097e0de16999-2",
+            "id": "interface-AfterContentInit-6dc79a9e900524f5a873097e0de16999-1",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.model.ts",
             "deprecated": false,
             "deprecationMessage": "",
@@ -71,6 +44,33 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "AfterContentInit-1"
+        },
+        {
+            "name": "AfterContentInit",
+            "id": "interface-AfterContentInit-fad3f9fff7f5da575c4d96232bf4aff3-2",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface RegisterGeolocationTopModel extends CmsComponent {\n    country?: string;\n    content?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 166,
+            "methods": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 9,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -367,7 +367,7 @@
         },
         {
             "name": "GeolocationBlockingComponent",
-            "id": "component-GeolocationBlockingComponent-cc5bc633848f7c35163d0118608a86a8",
+            "id": "component-GeolocationBlockingComponent-16c9a9739a93936012743c6c3cd26de3",
             "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -585,7 +585,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { LanguageService } from '@spartacus/core';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { GeolocationBlockingModel } from './geolocation-blocking.model';\n\n@Component({\n    selector: 'geolocation-blocking-modal',\n    templateUrl: './geolocation-blocking.component.html',\n    styleUrls: ['./geolocation-blocking.component.scss']\n  })\n  export class GeolocationBlockingComponent {\n\n    @Input()\n    currentCountry?: string;\n\n    closeResult = '';\n    countryList: Array<{code: string, text: string}> = [{code: \"ja\", text: \"Japonés\"}, {code: \"en\", text: \"Inglés\"}, {code: \"de\", text: \"Holandés\"}, {code: \"zh\", text: \"Chino\"}];\n    countrySelected:string = '';\n    language: boolean = false;\n\n    constructor(\n        public component: CmsComponentData<GeolocationBlockingModel>,\n        private modalService: NgbModal,\n        public languageService: LanguageService) {}\n\n\n        openModal(content: any) {\n      this.modalService.open(content).result.then((result) => {\n        this.closeResult = `Closed with: ${result}`;\n      }, (reason) => {\n        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n      });\n    }\n  \n    private getDismissReason(reason: any): string {\n      if (reason === ModalDismissReasons.ESC) {\n        return 'by pressing ESC';\n      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n        return 'by clicking on a backdrop';\n      } else {\n        return  `with: ${reason}`;\n      }\n    }\n\n    dismiss(reason?: any) {\n      this.modalService.dismissAll(reason);\n    }\n\n    setLanguage(country: string) {\n      this.countrySelected = country;\n      this.languageService.setActive(country);\n      this.countrySelected = 'Country changed to ' + country;\n      this.modalService.dismissAll('By changing country');\n    }\n  }\n\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { LanguageService } from '@spartacus/core';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { GeolocationBlockingModel } from './geolocation-blocking.model';\n\n@Component({\n    selector: 'geolocation-blocking-modal',\n    templateUrl: './geolocation-blocking.component.html',\n    styleUrls: ['./geolocation-blocking.component.scss'],\n  })\n  export class GeolocationBlockingComponent {\n\n    @Input()\n    currentCountry?: string;\n\n    closeResult = '';\n    countryList: Array<{code: string, text: string}> = [{code: \"ja\", text: \"Japonés\"}, {code: \"en\", text: \"Inglés\"}, {code: \"de\", text: \"Holandés\"}, {code: \"zh\", text: \"Chino\"}];\n    countrySelected:string = '';\n    language: boolean = false;\n\n    constructor(\n        public component: CmsComponentData<GeolocationBlockingModel>,\n        private modalService: NgbModal,\n        public languageService: LanguageService) {}\n\n\n        openModal(content: any) {\n      this.modalService.open(content).result.then((result) => {\n        this.closeResult = `Closed with: ${result}`;\n      }, (reason) => {\n        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n      });\n    }\n  \n    private getDismissReason(reason: any): string {\n      if (reason === ModalDismissReasons.ESC) {\n        return 'by pressing ESC';\n      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n        return 'by clicking on a backdrop';\n      } else {\n        return  `with: ${reason}`;\n      }\n    }\n\n    dismiss(reason?: any) {\n      this.modalService.dismissAll(reason);\n    }\n\n    setLanguage(country: string) {\n      this.countrySelected = country;\n      this.languageService.setActive(country);\n      this.countrySelected = 'Country changed to ' + country;\n      this.modalService.dismissAll('By changing country');\n    }\n  }\n\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1753,13 +1753,13 @@
         },
         {
             "name": "TestGeolocationBlockingModule",
-            "id": "module-TestGeolocationBlockingModule-7c2b9924b82ad619bb60343a7a0dc33a",
+            "id": "module-TestGeolocationBlockingModule-f13c9cdcedb6c07700335b9244f9c76d",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\nimport { GeolocationBlockingComponent } from \"./geolocation-blocking.component\";\n\n@NgModule({\n    declarations: [GeolocationBlockingComponent],\n    exports: [GeolocationBlockingComponent],\n    entryComponents: [GeolocationBlockingComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n    I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            GeolocationBlockingComponent: {\n              component: GeolocationBlockingComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    providers: [\n      LanguageService,\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestGeolocationBlockingModule { }",
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\nimport { GeolocationBlockingComponent } from \"./geolocation-blocking.component\";\n\n@NgModule({\n    declarations: [GeolocationBlockingComponent],\n    exports: [GeolocationBlockingComponent],\n    entryComponents: [GeolocationBlockingComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n        I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            GeolocationBlockingComponent: {\n              component: GeolocationBlockingComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    providers: [\n      LanguageService,\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestGeolocationBlockingModule { }",
             "children": [
                 {
                     "type": "providers",
@@ -1883,6 +1883,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "CHECK_HASH",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "storybook-fix.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "['0be5cd4bed1d63d21a865a14707131ff', 'e0c243b9118ecf34576a8ed5d2f5e238']"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1901,6 +1911,36 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/geolocation-blocking.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/register-geolocation-top.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/register-geolocation.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Default",
@@ -1933,46 +1973,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/assets/register-geolocation-top.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1991,6 +1991,26 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "FIX_CONTENT",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "storybook-fix.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "`\"use strict\";\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.getComponentDecoratorMetadata = exports.getComponentPropsDecoratorMetadata = exports.isComponent = exports.isDeclarable = exports.getComponentInputsOutputs = void 0;\nvar core_1 = require(\"@angular/core\");\n/**\n * Returns component Inputs / Outputs by browsing these properties and decorator\n */\nexports.getComponentInputsOutputs = function (component) {\n    var _a, _b;\n    var componentMetadata = exports.getComponentDecoratorMetadata(component);\n    var componentPropsMetadata = exports.getComponentPropsDecoratorMetadata(component);\n    var initialValue = {\n        inputs: [],\n        outputs: [],\n    };\n    // Adds the I/O present in @Component metadata\n    if (componentMetadata && componentMetadata.inputs) {\n        (_a = initialValue.inputs).push.apply(_a, componentMetadata.inputs.map(function (i) { return ({ propName: i, templateName: i }); }));\n    }\n    if (componentMetadata && componentMetadata.outputs) {\n        (_b = initialValue.outputs).push.apply(_b, componentMetadata.outputs.map(function (i) { return ({ propName: i, templateName: i }); }));\n    }\n    if (!componentPropsMetadata) {\n        return initialValue;\n    }\n    // Browses component properties to extract I/O\n    // Filters properties that have the same name as the one present in the @Component property\n    return Object.entries(componentPropsMetadata).reduce(function (previousValue, _a) {\n        var _b, _c;\n        var propertyName = _a[0], value = _a[1][0];\n        var valProto = value.prototype || value.__proto__ || {};\n        if (value instanceof core_1.Input || valProto.ngMetadataName === 'Input') {\n            var inputToAdd = {\n                propName: propertyName,\n                templateName: (_b = value.bindingPropertyName) !== null && _b !== void 0 ? _b : propertyName,\n            };\n            var previousInputsFiltered = previousValue.inputs.filter(function (i) { return i.templateName !== propertyName; });\n            return __assign(__assign({}, previousValue), { inputs: __spreadArrays(previousInputsFiltered, [inputToAdd]) });\n        }\n        if (value instanceof core_1.Output || valProto.ngMetadataName === 'Output') {\n            var outputToAdd = {\n                propName: propertyName,\n                templateName: (_c = value.bindingPropertyName) !== null && _c !== void 0 ? _c : propertyName,\n            };\n            var previousOutputsFiltered = previousValue.outputs.filter(function (i) { return i.templateName !== propertyName; });\n            return __assign(__assign({}, previousValue), { outputs: __spreadArrays(previousOutputsFiltered, [outputToAdd]) });\n        }\n        return previousValue;\n    }, initialValue);\n};\nexports.isDeclarable = function (component) {\n    if (!component) {\n        return false;\n    }\n    var decoratorKey = '__annotations__';\n    var decorators = Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n    return !!(decorators || []).find(function (d) { return d instanceof core_1.Directive || d instanceof core_1.Pipe || d instanceof core_1.Component; });\n};\nexports.isComponent = function (component) {\n    if (!component) {\n        return false;\n    }\n    var decoratorKey = '__annotations__';\n    var decorators = Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n    return (decorators || []).some(function (d) { return d instanceof core_1.Component; });\n};\n/**\n * Returns all component decorator properties\n * is used to get all \\`@Input\\` and \\`@Output\\` Decorator\n */\nexports.getComponentPropsDecoratorMetadata = function (component) {\n    var decoratorKey = '__prop__metadata__';\n    var propsDecorators = Reflect &&\n        Reflect.getOwnPropertyDescriptor &&\n        Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n\n    if (!propsDecorators) {\n        var propsDecorators = {};\n        for (var key in component.propDecorators) {\n            if (component.propDecorators.hasOwnProperty(key)){\n                propsDecorators[key] = [component.propDecorators[key][0].type]\n            }\n        }\n    }\n    return propsDecorators;\n};\n/**\n * Returns component decorator \\`@Component\\`\n */\nexports.getComponentDecoratorMetadata = function (component) {\n    var decoratorKey = '__annotations__';\n    var decorators = Reflect &&\n        Reflect.getOwnPropertyDescriptor &&\n        Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n    if (!decorators) {\n        return component.decorators[0].args[0];\n    }\n    return (decorators || []).find(function (d) { return d instanceof core_1.Component; });\n};`"
+            },
+            {
+                "name": "FIX_FILE",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "storybook-fix.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'NgComponentAnalyzer.js'"
             },
             {
                 "name": "Large",
@@ -2043,6 +2063,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "PATH",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "storybook-fix.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "`node_modules/@storybook/angular/dist/ts3.9/client/preview/angular-beta/utils`"
+            },
+            {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2089,6 +2119,36 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/geolocation-blocking.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<GeolocationBlockingComponent>",
+                "defaultValue": "args => ({\n    component: GeolocationBlockingComponent,\n    props: {\n      ...args,\n    },\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/register-geolocation-top.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<RegisterGeolocationTopComponent>",
+                "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/register-geolocation.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<RegisterGeolocationComponent>",
+                "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
             },
             {
                 "name": "Template",
@@ -2149,52 +2209,54 @@
                 "deprecationMessage": "",
                 "type": "Story<RegisterGeolocationComponent>",
                 "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/assets/register-geolocation-top.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RegisterGeolocationTopComponent>",
-                "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<GeolocationBlockingComponent>",
-                "defaultValue": "args => ({\n    component: GeolocationBlockingComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RegisterGeolocationTopComponent>",
-                "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RegisterGeolocationComponent>",
-                "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "storybook-fix.ts": [
+                {
+                    "name": "CHECK_HASH",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "storybook-fix.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "['0be5cd4bed1d63d21a865a14707131ff', 'e0c243b9118ecf34576a8ed5d2f5e238']"
+                },
+                {
+                    "name": "FIX_CONTENT",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "storybook-fix.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "`\"use strict\";\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.getComponentDecoratorMetadata = exports.getComponentPropsDecoratorMetadata = exports.isComponent = exports.isDeclarable = exports.getComponentInputsOutputs = void 0;\nvar core_1 = require(\"@angular/core\");\n/**\n * Returns component Inputs / Outputs by browsing these properties and decorator\n */\nexports.getComponentInputsOutputs = function (component) {\n    var _a, _b;\n    var componentMetadata = exports.getComponentDecoratorMetadata(component);\n    var componentPropsMetadata = exports.getComponentPropsDecoratorMetadata(component);\n    var initialValue = {\n        inputs: [],\n        outputs: [],\n    };\n    // Adds the I/O present in @Component metadata\n    if (componentMetadata && componentMetadata.inputs) {\n        (_a = initialValue.inputs).push.apply(_a, componentMetadata.inputs.map(function (i) { return ({ propName: i, templateName: i }); }));\n    }\n    if (componentMetadata && componentMetadata.outputs) {\n        (_b = initialValue.outputs).push.apply(_b, componentMetadata.outputs.map(function (i) { return ({ propName: i, templateName: i }); }));\n    }\n    if (!componentPropsMetadata) {\n        return initialValue;\n    }\n    // Browses component properties to extract I/O\n    // Filters properties that have the same name as the one present in the @Component property\n    return Object.entries(componentPropsMetadata).reduce(function (previousValue, _a) {\n        var _b, _c;\n        var propertyName = _a[0], value = _a[1][0];\n        var valProto = value.prototype || value.__proto__ || {};\n        if (value instanceof core_1.Input || valProto.ngMetadataName === 'Input') {\n            var inputToAdd = {\n                propName: propertyName,\n                templateName: (_b = value.bindingPropertyName) !== null && _b !== void 0 ? _b : propertyName,\n            };\n            var previousInputsFiltered = previousValue.inputs.filter(function (i) { return i.templateName !== propertyName; });\n            return __assign(__assign({}, previousValue), { inputs: __spreadArrays(previousInputsFiltered, [inputToAdd]) });\n        }\n        if (value instanceof core_1.Output || valProto.ngMetadataName === 'Output') {\n            var outputToAdd = {\n                propName: propertyName,\n                templateName: (_c = value.bindingPropertyName) !== null && _c !== void 0 ? _c : propertyName,\n            };\n            var previousOutputsFiltered = previousValue.outputs.filter(function (i) { return i.templateName !== propertyName; });\n            return __assign(__assign({}, previousValue), { outputs: __spreadArrays(previousOutputsFiltered, [outputToAdd]) });\n        }\n        return previousValue;\n    }, initialValue);\n};\nexports.isDeclarable = function (component) {\n    if (!component) {\n        return false;\n    }\n    var decoratorKey = '__annotations__';\n    var decorators = Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n    return !!(decorators || []).find(function (d) { return d instanceof core_1.Directive || d instanceof core_1.Pipe || d instanceof core_1.Component; });\n};\nexports.isComponent = function (component) {\n    if (!component) {\n        return false;\n    }\n    var decoratorKey = '__annotations__';\n    var decorators = Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n    return (decorators || []).some(function (d) { return d instanceof core_1.Component; });\n};\n/**\n * Returns all component decorator properties\n * is used to get all \\`@Input\\` and \\`@Output\\` Decorator\n */\nexports.getComponentPropsDecoratorMetadata = function (component) {\n    var decoratorKey = '__prop__metadata__';\n    var propsDecorators = Reflect &&\n        Reflect.getOwnPropertyDescriptor &&\n        Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n\n    if (!propsDecorators) {\n        var propsDecorators = {};\n        for (var key in component.propDecorators) {\n            if (component.propDecorators.hasOwnProperty(key)){\n                propsDecorators[key] = [component.propDecorators[key][0].type]\n            }\n        }\n    }\n    return propsDecorators;\n};\n/**\n * Returns component decorator \\`@Component\\`\n */\nexports.getComponentDecoratorMetadata = function (component) {\n    var decoratorKey = '__annotations__';\n    var decorators = Reflect &&\n        Reflect.getOwnPropertyDescriptor &&\n        Reflect.getOwnPropertyDescriptor(component, decoratorKey)\n        ? Reflect.getOwnPropertyDescriptor(component, decoratorKey).value\n        : component[decoratorKey];\n    if (!decorators) {\n        return component.decorators[0].args[0];\n    }\n    return (decorators || []).find(function (d) { return d instanceof core_1.Component; });\n};`"
+                },
+                {
+                    "name": "FIX_FILE",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "storybook-fix.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'NgComponentAnalyzer.js'"
+                },
+                {
+                    "name": "PATH",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "storybook-fix.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "`node_modules/@storybook/angular/dist/ts3.9/client/preview/angular-beta/utils`"
+                }
+            ],
             "src/test.ts": [
                 {
                     "name": "context",
@@ -2235,6 +2297,72 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "literal type"
+                }
+            ],
+            "stories/geolocation-blocking.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/geolocation-blocking.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/geolocation-blocking.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<GeolocationBlockingComponent>",
+                    "defaultValue": "args => ({\n    component: GeolocationBlockingComponent,\n    props: {\n      ...args,\n    },\n  })"
+                }
+            ],
+            "stories/register-geolocation-top.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/register-geolocation-top.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/register-geolocation-top.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<RegisterGeolocationTopComponent>",
+                    "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
+                }
+            ],
+            "stories/register-geolocation.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/register-geolocation.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/register-geolocation.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<RegisterGeolocationComponent>",
+                    "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
                 }
             ],
             "src/stories/geolocation-blocking.stories.ts": [
@@ -2297,94 +2425,6 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/register-geolocation.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<RegisterGeolocationComponent>",
-                    "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
-            "src/stories/assets/register-geolocation-top.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/assets/register-geolocation-top.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/assets/register-geolocation-top.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<RegisterGeolocationTopComponent>",
-                    "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
-            "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<GeolocationBlockingComponent>",
-                    "defaultValue": "args => ({\n    component: GeolocationBlockingComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
-            "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<RegisterGeolocationTopComponent>",
-                    "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
-            "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<RegisterGeolocationComponent>",
@@ -2569,26 +2609,6 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2616,26 +2636,6 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2660,26 +2660,6 @@
                 "name": "RegisterGeolocationModel",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -2842,26 +2822,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/assets/register-geolocation-top.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/assets/register-geolocation-top.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/stories/button.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2964,6 +2924,106 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/geolocation-blocking.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/geolocation-blocking.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/register-geolocation-top.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/register-geolocation-top.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/register-geolocation.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/register-geolocation.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "storybook-fix.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CHECK_HASH",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "storybook-fix.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FIX_CONTENT",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "storybook-fix.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FIX_FILE",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "storybook-fix.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PATH",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

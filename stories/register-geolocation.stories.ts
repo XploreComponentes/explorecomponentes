@@ -2,7 +2,8 @@ import { moduleMetadata, Story, Meta, storiesOf } from '@storybook/angular';
 import { CmsComponentData } from '@spartacus/storefront';
 
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RegisterGeolocationComponent } from './register-geolocation.component';
+import { CommonModule } from '@angular/common';
+import { RegisterGeolocationComponent } from '../projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component';
 
 export default {
     title: 'Register Geolocation Modal',
@@ -11,7 +12,10 @@ export default {
             declarations: [
               RegisterGeolocationComponent
             ],
-            imports: [NgbModule, NgbDropdownModule, CmsComponentData],
+            imports: [NgbModule, NgbDropdownModule, CommonModule],
+            providers: [
+              CmsComponentData
+            ]
         })
     ]
 };

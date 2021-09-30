@@ -7,7 +7,7 @@ import { GeolocationBlockingModel } from './geolocation-blocking.model';
 @Component({
     selector: 'geolocation-blocking-modal',
     templateUrl: './geolocation-blocking.component.html',
-    styleUrls: ['./geolocation-blocking.component.scss']
+    styleUrls: ['./geolocation-blocking.component.scss'],
   })
   export class GeolocationBlockingComponent {
 
