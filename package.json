@@ -12,7 +12,8 @@
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
     "build-storybook": "npm run docs:json && build-storybook",
-    "chromatic": "npx chromatic --project-token=1a3d53b676d3"
+    "chromatic": "npx chromatic --project-token=1a3d53b676d3",
+    "fix-storybook": "ngcc --properties es2015 browser module main --create-ivy-entry-points"
   },
   "private": true,
   "dependencies": {

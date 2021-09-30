@@ -25,7 +25,7 @@ import { GeolocationBlockingModel } from './geolocation-blocking.model';
         public languageService: LanguageService) {}
 
 
-        openModal(content: any) {
+    openModal(content: any) {
       this.modalService.open(content).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;
       }, (reason) => {

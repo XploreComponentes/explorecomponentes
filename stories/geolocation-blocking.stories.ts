@@ -5,15 +5,18 @@ import { CmsComponentData } from '@spartacus/storefront';
 import { NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '@spartacus/core';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 
 export default {
     title: 'Geolocation Blocking Modal',
     decorators: [
         moduleMetadata({
             declarations: [
-              GeolocationBlockingComponent
+              GeolocationBlockingComponent              
             ],
-            imports: [NgbModule, NgbDropdownModule, CommonModule],
+            imports: [NgbModule, NgbDropdownModule, CommonModule, StoreModule.forRoot({}), EffectsModule.forRoot([]), NgbModalModule],
             providers: [
               CmsComponentData,
               LanguageService
