@@ -22,6 +22,15 @@ import { RegisterGeolocationModel } from './register-geolocation.model';
         private modalService: NgbModal
         ) {}
   
+      ngOnInit() {
+        if(this.component?.data$) {
+          this.component.data$.subscribe(data => {
+            this.currentCountry = data.country,
+            this.modalBody = data.content;
+          })
+        }
+      }  
+
         openModal(content: any) {
       this.modalService.open(content).result.then((result) => {
         this.closeResult = `Closed with: ${result}`;

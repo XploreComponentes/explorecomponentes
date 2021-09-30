@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { LanguageService } from '@spartacus/core';
 import { CmsComponentData } from '@spartacus/storefront';
@@ -9,7 +9,7 @@ import { GeolocationBlockingModel } from './geolocation-blocking.model';
     templateUrl: './geolocation-blocking.component.html',
     styleUrls: ['./geolocation-blocking.component.scss'],
   })
-  export class GeolocationBlockingComponent {
+  export class GeolocationBlockingComponent implements OnInit{
 
     @Input()
     currentCountry?: string;
@@ -24,6 +24,14 @@ import { GeolocationBlockingModel } from './geolocation-blocking.model';
         private modalService: NgbModal,
         public languageService: LanguageService) {}
 
+
+    ngOnInit() {
+      if(this.component?.data$) {
+        this.component.data$.subscribe(data => {
+          this.currentCountry = data.country;
+        })
+      }
+    }    
 
     openModal(content: any) {
       this.modalService.open(content).result.then((result) => {

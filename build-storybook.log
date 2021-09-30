@@ -1,8 +1,3 @@
-$ npm run docs:json && build-storybook --output-dir /var/folders/z4/b591xjxn1zg01g92kxjjtzwh0000gn/T/chromatic--86755-twNRGRSmkn5X
-
-> testing-spartacus-ng@0.0.0 docs:json
-> compodoc -p ./tsconfig.json -e json -d .
-
 [0m
 [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
 [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [48;5;255m [48;5;255m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m [0m
@@ -26,636 +21,625 @@ Node.js version : v12.22.3
 
 Operating system : macOS Big Sur
 
-[12:54:28] No configuration file found, switching to CLI flags.
-[12:54:28] Using tsconfig file : /Users/josemariamartinez/testing-components-ng/tsconfig.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.browserslistrc
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.editorconfig
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/README.md
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/angular.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/build-storybook.log
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.gitignore
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/documentation.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/karma.conf.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/package-lock.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/package.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/tsconfig.app.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/tsconfig.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/tsconfig.spec.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/yarn.lock
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.storybook/main.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.storybook/preview.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.storybook/tsconfig.json
-[12:54:28] Ignoring       : /Users/josemariamartinez/testing-components-ng/.storybook/typings.d.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/index.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/main.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/favicon.ico
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/polyfills.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/styles.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/test.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/0.b73eaee9a88f178d62ed.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/1.f296d183a17268696d73.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/11.49c687eaa6261f8b7be2.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/10.9998ba67d65d81d20896.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/11.49c687eaa6261f8b7be2.manager.bundle.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/12.c9538ed3766c96f289e7.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/331.fb3a5f59.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/331.fb3a5f59.iframe.bundle.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/459.f30db4aa.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/5.fa71488e730c5c7f885f.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/5.fa71488e730c5c7f885f.manager.bundle.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/586.07286df6.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/6.8096ae4aadde0743697b.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/675.ce52cd8c.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/586.07286df6.iframe.bundle.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/675.ce52cd8c.iframe.bundle.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/7.b34baecbd082bc7b188d.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/8.15577edffecf900a8de2.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/9.d7d85aa0a49a98f17218.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/881.ef4639d6.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/913.d45e9882.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/favicon.ico
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/iframe.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/index.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/main.185c4154c38d7ff89704.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/main.b68c21f6.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/runtime~main.909d038f912f063e8837.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/runtime~main.bee4e5e3.iframe.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/vendors~main.d3455eed64b243c89325.manager.bundle.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/vendors~main.d3455eed64b243c89325.manager.bundle.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/.github/workflows/npm.yml
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/README.md
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/karma.conf.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/ng-package.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/package.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/tsconfig.lib.prod.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/tsconfig.spec.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/tsconfig.lib.json
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/app-routing.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/app.component.html
-[12:54:28] Ignoring       : /Users/josemariamartinez/testing-components-ng/src/app/app.component.spec.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/app.component.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/app.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/app.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/environments/environment.prod.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/environments/environment.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/Button.stories.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/assets/.gitkeep
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/Introduction.stories.mdx
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/Header.stories.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/Page.stories.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/button.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/button.css
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/header.css
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/header.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/page.css
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/page.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/assets/webApplicationInjector.js
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/assets/webApplicationInjector.js.LICENSE.txt
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/public-api.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/spartacus-configuration.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/test.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/spartacus.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/code-brackets.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/colors.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/spartacus-features.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/comments.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/direction.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/flow.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/repo.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/plugin.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/assets/stackalt.svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/styles/spartacus/cart.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/styles/spartacus/product.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/styles/spartacus/storefinder.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/styles/spartacus/checkout.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/styles/spartacus/user.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/code-brackets.2e1112d7..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/colors.a4bd0486..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/direction.b770f9af..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/repo.6d496322..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/comments.a3859089..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/stackalt.dba9fbb3..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/plugin.d494b228..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/storybook-static/static/media/flow.edad2ac1..svg
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/.github/workflows/npm.yml
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/geolocation-blocking/geolocation-blocking.component.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/geolocation-blocking/geolocation-blocking.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/geolocation-blocking/geolocation-blocking.stories.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation/register-geolocation.component.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation/register-geolocation.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation/register-geolocation.stories.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation-top/register-geolocation-top.component.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation-top/register-geolocation-top.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation-top/register-geolocation-top.scss
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation-top/register-geolocation-top.stories.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/cart/cart-quick-order-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/cart/cart-saved-cart-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/checkout/checkout-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/asm/asm-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/smartedit/smart-edit-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/product/product-variants-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/user/user-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/storefinder/store-finder-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/tracking/personalization-feature.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.component.html
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.model.ts
-[12:54:28] Ignoring       : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.component.spec.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.component.html
-[12:54:28] Ignoring       : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.component.spec.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.model.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.module.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.component.html
-[12:54:28] Ignoring       : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.component.spec.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.model.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.component.ts
-[12:54:28] Including      : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.module.ts
-[12:54:28] Searching package.json file
-[12:54:28] package.json file found
-[12:54:28] Processing package.json dependencies
-[12:54:28] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
-[12:54:28] README.md file found
-[12:54:28] Error during /Users/josemariamartinez/testing-components-ng/CHANGELOG read
-[12:54:28] Continuing without CHANGELOG.md file
-[12:54:28] Error during /Users/josemariamartinez/testing-components-ng/CONTRIBUTING read
-[12:54:28] Continuing without CONTRIBUTING.md file
-[12:54:28] Error during /Users/josemariamartinez/testing-components-ng/LICENSE read
-[12:54:28] Continuing without LICENSE.md file
-[12:54:28] Error during /Users/josemariamartinez/testing-components-ng/TODO read
-[12:54:28] Continuing without TODO.md file
-[12:54:28] Get dependencies data
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/main.ts
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/polyfills.ts
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/test.ts
-[12:54:32] found          : require
-[12:54:32] found          : context
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/app-routing.module.ts
-[12:54:32] found          : AppRoutingModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- RouterModule
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/app.component.ts
-[12:54:32] found          : AppComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/app.module.ts
-[12:54:32] found          : AppModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- BrowserModule
-[12:54:32]                : 	- HttpClientModule
-[12:54:32]                : 	- AppRoutingModule
-[12:54:32]                : 	- StoreModule
-[12:54:32]                : 	- EffectsModule
-[12:54:32]                : 	- SpartacusModule
-[12:54:32]                : - declarations:
-[12:54:32]                : 	- AppComponent
-[12:54:32]                : - bootstrap:
-[12:54:32]                : 	- AppComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/environments/environment.prod.ts
-[12:54:32] found          : environment
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/environments/environment.ts
-[12:54:32] found          : environment
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/Button.stories.ts
-[12:54:32] found          : Template
-[12:54:32] found          : Primary
-[12:54:32] found          : Secondary
-[12:54:32] found          : Large
-[12:54:32] found          : Small
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/Header.stories.ts
-[12:54:32] found          : Template
-[12:54:32] found          : LoggedIn
-[12:54:32] found          : LoggedOut
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/Page.stories.ts
-[12:54:32] found          : Template
-[12:54:32] found          : LoggedIn
-[12:54:32] found          : LoggedOut
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/button.component.ts
-[12:54:32] found          : ButtonComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/header.component.ts
-[12:54:32] found          : HeaderComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/page.component.ts
-[12:54:32] found          : PageComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/public-api.ts
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/spartacus-configuration.module.ts
-[12:54:32] found          : SpartacusConfigurationModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(layoutConfig)
-[12:54:32]                : 	- provideConfig(mediaConfig)
-[12:54:32]                : 	- defaultCmsContentProviders
-[12:54:32]                : 	- provideConfig(<OccConfig>{
+[15:21:47] No configuration file found, switching to CLI flags.
+[15:21:47] Using tsconfig file : /Users/josemariamartinez/aplication/explorecomponentes/tsconfig.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.browserslistrc
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.editorconfig
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.gitignore
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/README.md
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/angular.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/build-storybook.log
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/karma.conf.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/documentation.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/package-lock.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/package.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/tsconfig.app.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/tsconfig.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/tsconfig.spec.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/yarn.lock
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.storybook/main.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.storybook/preview.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.storybook/tsconfig.json
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/.storybook/typings.d.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/favicon.ico
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/index.html
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/polyfills.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/main.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/styles.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/test.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/stories/geolocation-blocking.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/stories/register-geolocation-top.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/stories/register-geolocation.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/0.b73eaee9a88f178d62ed.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/1.f296d183a17268696d73.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/10.9998ba67d65d81d20896.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/11.49c687eaa6261f8b7be2.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/11.49c687eaa6261f8b7be2.manager.bundle.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/12.c9538ed3766c96f289e7.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/331.fb3a5f59.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/331.fb3a5f59.iframe.bundle.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/391.7d5f8288.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/391.7d5f8288.iframe.bundle.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/459.f30db4aa.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/5.fa71488e730c5c7f885f.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/5.fa71488e730c5c7f885f.manager.bundle.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/6.8096ae4aadde0743697b.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/7.b34baecbd082bc7b188d.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/8.15577edffecf900a8de2.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/881.ef4639d6.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/9.d7d85aa0a49a98f17218.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/909.57cc776a.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/909.57cc776a.iframe.bundle.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/913.d45e9882.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/favicon.ico
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/iframe.html
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/index.html
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/main.185c4154c38d7ff89704.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/main.2de0e9f2.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/runtime~main.28de9dab.iframe.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/runtime~main.909d038f912f063e8837.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/vendors~main.d3455eed64b243c89325.manager.bundle.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/vendors~main.d3455eed64b243c89325.manager.bundle.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/.github/workflows/xplore-components.yml
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/README.md
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/explore-componentes.d.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/package.json
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/public-api.d.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/README.md
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/karma.conf.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/ng-package.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/package-lock.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/package.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/tsconfig.lib.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/tsconfig.lib.prod.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/tsconfig.spec.json
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app-routing.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.component.html
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.component.spec.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.component.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/assets/.gitkeep
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/environments/environment.prod.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/environments/environment.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Button.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Introduction.stories.mdx
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Page.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Header.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/button.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/button.css
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/geolocation-blocking.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/header.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/header.css
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/page.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/page.css
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/register-geolocation-top.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/register-geolocation.stories.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/assets/webApplicationInjector.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/storybook-static/assets/webApplicationInjector.js.LICENSE.txt
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/explore-componentes.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/public-api.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/bundles/explore-componentes.umd.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/bundles/explore-componentes.umd.js.map
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/fesm2015/explore-componentes.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/fesm2015/explore-componentes.js.map
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/public-api.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/test.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/spartacus-configuration.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/spartacus-features.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/spartacus.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/code-brackets.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/colors.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/comments.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/direction.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/flow.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/plugin.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/repo.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/assets/stackalt.svg
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/styles/spartacus/cart.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/styles/spartacus/checkout.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/styles/spartacus/product.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/styles/spartacus/storefinder.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/styles/spartacus/user.scss
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/.github/workflows/npm.yml
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/register-geolocation/register-geolocation.component.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/register-geolocation/register-geolocation.model.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/register-geolocation/register-geolocation.module.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/register-geolocation-top/register-geolocation-top.component.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/register-geolocation-top/register-geolocation-top.model.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/register-geolocation-top/register-geolocation-top.module.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/geolocation-blocking/geolocation-blocking.component.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/geolocation-blocking/geolocation-blocking.model.d.ts
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/lib/components/geolocation-blocking/geolocation-blocking.module.d.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/asm/asm-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/cart/cart-quick-order-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/cart/cart-saved-cart-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/smartedit/smart-edit-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/checkout/checkout-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/product/product-variants-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/storefinder/store-finder-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/tracking/personalization-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/user/user-feature.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/geolocation-blocking/geolocation-blocking.component.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/geolocation-blocking/geolocation-blocking.model.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/geolocation-blocking/geolocation-blocking.module.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/register-geolocation/register-geolocation.component.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/register-geolocation/register-geolocation.model.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/register-geolocation/register-geolocation.module.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/register-geolocation-top/register-geolocation-top.component.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/register-geolocation-top/register-geolocation-top.model.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/dist/xplorecomponents/esm2015/lib/components/register-geolocation-top/register-geolocation-top.module.js
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.html
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.scss
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.spec.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.model.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.html
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.spec.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.model.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.html
+[15:21:47] Ignoring       : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.spec.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.module.ts
+[15:21:47] Including      : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.scss
+[15:21:47] Searching package.json file
+[15:21:47] package.json file found
+[15:21:47] Processing package.json dependencies
+[15:21:47] Searching README.md, CHANGELOG.md, CONTRIBUTING.md, LICENSE.md, TODO.md files
+[15:21:47] README.md file found
+[15:21:47] Error during /Users/josemariamartinez/aplication/explorecomponentes/CHANGELOG read
+[15:21:47] Continuing without CHANGELOG.md file
+[15:21:47] Error during /Users/josemariamartinez/aplication/explorecomponentes/CONTRIBUTING read
+[15:21:47] Continuing without CONTRIBUTING.md file
+[15:21:47] Error during /Users/josemariamartinez/aplication/explorecomponentes/LICENSE read
+[15:21:47] Continuing without LICENSE.md file
+[15:21:47] Error during /Users/josemariamartinez/aplication/explorecomponentes/TODO read
+[15:21:47] Continuing without TODO.md file
+[15:21:47] Get dependencies data
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/polyfills.ts
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/main.ts
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/test.ts
+[15:21:53] found          : require
+[15:21:53] found          : context
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/stories/geolocation-blocking.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Default
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/stories/register-geolocation-top.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Default
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/stories/register-geolocation.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Default
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app-routing.module.ts
+[15:21:53] found          : AppRoutingModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- RouterModule
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.component.ts
+[15:21:53] found          : AppComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/app.module.ts
+[15:21:53] found          : AppModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- BrowserModule
+[15:21:53]                : 	- HttpClientModule
+[15:21:53]                : 	- AppRoutingModule
+[15:21:53]                : 	- StoreModule
+[15:21:53]                : 	- EffectsModule
+[15:21:53]                : 	- SpartacusModule
+[15:21:53]                : - declarations:
+[15:21:53]                : 	- AppComponent
+[15:21:53]                : - bootstrap:
+[15:21:53]                : 	- AppComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/environments/environment.prod.ts
+[15:21:53] found          : environment
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/environments/environment.ts
+[15:21:53] found          : environment
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Button.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Primary
+[15:21:53] found          : Secondary
+[15:21:53] found          : Large
+[15:21:53] found          : Small
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Page.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : LoggedIn
+[15:21:53] found          : LoggedOut
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/Header.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : LoggedIn
+[15:21:53] found          : LoggedOut
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/button.component.ts
+[15:21:53] found          : ButtonComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/geolocation-blocking.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Default
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/header.component.ts
+[15:21:53] found          : HeaderComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/page.component.ts
+[15:21:53] found          : PageComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/register-geolocation-top.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Default
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/stories/register-geolocation.stories.ts
+[15:21:53] found          : Template
+[15:21:53] found          : Default
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/public-api.ts
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/test.ts
+[15:21:53] found          : require
+[15:21:53] found          : context
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/spartacus-configuration.module.ts
+[15:21:53] found          : SpartacusConfigurationModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(layoutConfig)
+[15:21:53]                : 	- provideConfig(mediaConfig)
+[15:21:53]                : 	- defaultCmsContentProviders
+[15:21:53]                : 	- provideConfig(<OccConfig>{
     backend: {
         occ: {
             baseUrl: ,
         }
     },
 })
-[12:54:32]                : 	- provideConfig(<SiteContextConfig>{
+[15:21:53]                : 	- provideConfig(<SiteContextConfig>{
     context: {
         currency: [], language: [],
     },
 })
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
     i18n: {
         resources: translations, chunks: translationChunksConfig, fallbackLang: 
     },
 })
-[12:54:32]                : 	- provideConfig(<FeaturesConfig>{
+[15:21:53]                : 	- provideConfig(<FeaturesConfig>{
     features: {
         level: 
     }
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/test.ts
-[12:54:32] found          : require
-[12:54:32] found          : context
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/spartacus.module.ts
-[12:54:32] found          : SpartacusModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- SpartacusFeaturesModule
-[12:54:32]                : 	- SpartacusConfigurationModule
-[12:54:32]                : 	- BaseStorefrontModule
-[12:54:32]                : - exports:
-[12:54:32]                : 	- BaseStorefrontModule
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/spartacus-features.module.ts
-[12:54:32] found          : SpartacusFeaturesModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- AuthModule
-[12:54:32]                : 	- LogoutModule
-[12:54:32]                : 	- LoginRouteModule
-[12:54:32]                : 	- HamburgerMenuModule
-[12:54:32]                : 	- SiteContextSelectorModule
-[12:54:32]                : 	- LinkModule
-[12:54:32]                : 	- BannerModule
-[12:54:32]                : 	- CmsParagraphModule
-[12:54:32]                : 	- TabParagraphContainerModule
-[12:54:32]                : 	- BannerCarouselModule
-[12:54:32]                : 	- CategoryNavigationModule
-[12:54:32]                : 	- NavigationModule
-[12:54:32]                : 	- FooterNavigationModule
-[12:54:32]                : 	- BreadcrumbModule
-[12:54:32]                : 	- UserTransitionalModule
-[12:54:32]                : 	- UserOccTransitionalModule
-[12:54:32]                : 	- AddressBookModule
-[12:54:32]                : 	- PaymentMethodsModule
-[12:54:32]                : 	- NotificationPreferenceModule
-[12:54:32]                : 	- MyInterestsModule
-[12:54:32]                : 	- StockNotificationModule
-[12:54:32]                : 	- ConsentManagementModule
-[12:54:32]                : 	- MyCouponsModule
-[12:54:32]                : 	- AnonymousConsentsModule
-[12:54:32]                : 	- AnonymousConsentsDialogModule
-[12:54:32]                : 	- AnonymousConsentManagementBannerModule
-[12:54:32]                : 	- ProductModule
-[12:54:32]                : 	- ProductOccModule
-[12:54:32]                : 	- ProductDetailsPageModule
-[12:54:32]                : 	- ProductListingPageModule
-[12:54:32]                : 	- ProductListModule
-[12:54:32]                : 	- SearchBoxModule
-[12:54:32]                : 	- ProductFacetNavigationModule
-[12:54:32]                : 	- ProductTabsModule
-[12:54:32]                : 	- ProductCarouselModule
-[12:54:32]                : 	- ProductReferencesModule
-[12:54:32]                : 	- ProductImagesModule
-[12:54:32]                : 	- ProductSummaryModule
-[12:54:32]                : 	- ProductIntroModule
-[12:54:32]                : 	- CartModule
-[12:54:32]                : 	- CartOccModule
-[12:54:32]                : 	- CartComponentModule
-[12:54:32]                : 	- WishListModule
-[12:54:32]                : 	- CostCenterOccModule
-[12:54:32]                : 	- OrderHistoryModule
-[12:54:32]                : 	- OrderDetailsModule
-[12:54:32]                : 	- OrderCancellationModule
-[12:54:32]                : 	- OrderReturnModule
-[12:54:32]                : 	- ReturnRequestListModule
-[12:54:32]                : 	- ReturnRequestDetailModule
-[12:54:32]                : 	- ReplenishmentOrderHistoryModule
-[12:54:32]                : 	- ReplenishmentOrderDetailsModule
-[12:54:32]                : 	- OrderOccModule
-[12:54:32]                : 	- NavigationEventModule
-[12:54:32]                : 	- HomePageEventModule
-[12:54:32]                : 	- CartPageEventModule
-[12:54:32]                : 	- ProductPageEventModule
-[12:54:32]                : 	- ExternalRoutesModule
-[12:54:32]                : 	- UserFeatureModule
-[12:54:32]                : 	- PersonalizationFeatureModule
-[12:54:32]                : 	- StoreFinderFeatureModule
-[12:54:32]                : 	- SmartEditFeatureModule
-[12:54:32]                : 	- ProductVariantsFeatureModule
-[12:54:32]                : 	- CheckoutFeatureModule
-[12:54:32]                : 	- CartSavedCartFeatureModule
-[12:54:32]                : 	- CartQuickOrderFeatureModule
-[12:54:32]                : 	- AsmFeatureModule
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/components/geolocation-blocking/geolocation-blocking.component.ts
-[12:54:32] found          : GeolocationBlockingModal
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/components/geolocation-blocking/geolocation-blocking.stories.ts
-[12:54:32] found          : Template
-[12:54:32] found          : Default
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation/register-geolocation.component.ts
-[12:54:32] found          : RegisterGeolocationModal
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation/register-geolocation.stories.ts
-[12:54:32] found          : Template
-[12:54:32] found          : Default
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation-top/register-geolocation-top.component.ts
-[12:54:32] found          : RegisterGeolocationTop
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/stories/components/register-geolocation-top/register-geolocation-top.stories.ts
-[12:54:32] found          : Template
-[12:54:32] found          : Default
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/cart/cart-quick-order-feature.module.ts
-[12:54:32] found          : CartQuickOrderFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- QuickOrderRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
-    featureModules: {
-        [CART_QUICK_ORDER_FEATURE]: {
-            module: () => import().then((m) => m.QuickOrderModule),
-        },
-    }
-})
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
-    i18n: {
-        resources: quickOrderTranslations, chunks: quickOrderTranslationChunksConfig,
-    },
-})
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/cart/cart-saved-cart-feature.module.ts
-[12:54:32] found          : CartSavedCartFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- SavedCartRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
-    featureModules: {
-        [CART_SAVED_CART_FEATURE]: {
-            module: () => import().then((m) => m.SavedCartModule),
-        },
-    }
-})
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
-    i18n: {
-        resources: savedCartTranslations, chunks: savedCartTranslationChunksConfig,
-    },
-})
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/checkout/checkout-feature.module.ts
-[12:54:32] found          : CheckoutFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- CheckoutRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
-    featureModules: {
-        [CHECKOUT_FEATURE]: {
-            module: () => import().then((m) => m.CheckoutModule),
-        },
-    }
-})
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
-    i18n: {
-        resources: checkoutTranslations, chunks: checkoutTranslationChunksConfig,
-    },
-})
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/asm/asm-feature.module.ts
-[12:54:32] found          : AsmFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- AsmRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/spartacus-features.module.ts
+[15:21:53] found          : SpartacusFeaturesModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- AuthModule
+[15:21:53]                : 	- LogoutModule
+[15:21:53]                : 	- LoginRouteModule
+[15:21:53]                : 	- HamburgerMenuModule
+[15:21:53]                : 	- SiteContextSelectorModule
+[15:21:53]                : 	- LinkModule
+[15:21:53]                : 	- BannerModule
+[15:21:53]                : 	- CmsParagraphModule
+[15:21:53]                : 	- TabParagraphContainerModule
+[15:21:53]                : 	- BannerCarouselModule
+[15:21:53]                : 	- CategoryNavigationModule
+[15:21:53]                : 	- NavigationModule
+[15:21:53]                : 	- FooterNavigationModule
+[15:21:53]                : 	- BreadcrumbModule
+[15:21:53]                : 	- UserTransitionalModule
+[15:21:53]                : 	- UserOccTransitionalModule
+[15:21:53]                : 	- AddressBookModule
+[15:21:53]                : 	- PaymentMethodsModule
+[15:21:53]                : 	- NotificationPreferenceModule
+[15:21:53]                : 	- MyInterestsModule
+[15:21:53]                : 	- StockNotificationModule
+[15:21:53]                : 	- ConsentManagementModule
+[15:21:53]                : 	- MyCouponsModule
+[15:21:53]                : 	- AnonymousConsentsModule
+[15:21:53]                : 	- AnonymousConsentsDialogModule
+[15:21:53]                : 	- AnonymousConsentManagementBannerModule
+[15:21:53]                : 	- ProductModule
+[15:21:53]                : 	- ProductOccModule
+[15:21:53]                : 	- ProductDetailsPageModule
+[15:21:53]                : 	- ProductListingPageModule
+[15:21:53]                : 	- ProductListModule
+[15:21:53]                : 	- SearchBoxModule
+[15:21:53]                : 	- ProductFacetNavigationModule
+[15:21:53]                : 	- ProductTabsModule
+[15:21:53]                : 	- ProductCarouselModule
+[15:21:53]                : 	- ProductReferencesModule
+[15:21:53]                : 	- ProductImagesModule
+[15:21:53]                : 	- ProductSummaryModule
+[15:21:53]                : 	- ProductIntroModule
+[15:21:53]                : 	- CartModule
+[15:21:53]                : 	- CartOccModule
+[15:21:53]                : 	- CartComponentModule
+[15:21:53]                : 	- WishListModule
+[15:21:53]                : 	- CostCenterOccModule
+[15:21:53]                : 	- OrderHistoryModule
+[15:21:53]                : 	- OrderDetailsModule
+[15:21:53]                : 	- OrderCancellationModule
+[15:21:53]                : 	- OrderReturnModule
+[15:21:53]                : 	- ReturnRequestListModule
+[15:21:53]                : 	- ReturnRequestDetailModule
+[15:21:53]                : 	- ReplenishmentOrderHistoryModule
+[15:21:53]                : 	- ReplenishmentOrderDetailsModule
+[15:21:53]                : 	- OrderOccModule
+[15:21:53]                : 	- NavigationEventModule
+[15:21:53]                : 	- HomePageEventModule
+[15:21:53]                : 	- CartPageEventModule
+[15:21:53]                : 	- ProductPageEventModule
+[15:21:53]                : 	- ExternalRoutesModule
+[15:21:53]                : 	- UserFeatureModule
+[15:21:53]                : 	- PersonalizationFeatureModule
+[15:21:53]                : 	- StoreFinderFeatureModule
+[15:21:53]                : 	- SmartEditFeatureModule
+[15:21:53]                : 	- ProductVariantsFeatureModule
+[15:21:53]                : 	- CheckoutFeatureModule
+[15:21:53]                : 	- CartSavedCartFeatureModule
+[15:21:53]                : 	- CartQuickOrderFeatureModule
+[15:21:53]                : 	- AsmFeatureModule
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/spartacus.module.ts
+[15:21:53] found          : SpartacusModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- SpartacusFeaturesModule
+[15:21:53]                : 	- SpartacusConfigurationModule
+[15:21:53]                : 	- BaseStorefrontModule
+[15:21:53]                : - exports:
+[15:21:53]                : 	- BaseStorefrontModule
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/asm/asm-feature.module.ts
+[15:21:53] found          : AsmFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- AsmRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
     featureModules: {
         [ASM_FEATURE]: {
             module: () => import().then((m) => m.AsmModule),
         },
     }
 })
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
     i18n: {
         resources: asmTranslations, chunks: asmTranslationChunksConfig,
     },
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/smartedit/smart-edit-feature.module.ts
-[12:54:32] found          : SmartEditFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- SmartEditRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/cart/cart-quick-order-feature.module.ts
+[15:21:53] found          : CartQuickOrderFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- QuickOrderRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
+    featureModules: {
+        [CART_QUICK_ORDER_FEATURE]: {
+            module: () => import().then((m) => m.QuickOrderModule),
+        },
+    }
+})
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
+    i18n: {
+        resources: quickOrderTranslations, chunks: quickOrderTranslationChunksConfig,
+    },
+})
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/cart/cart-saved-cart-feature.module.ts
+[15:21:53] found          : CartSavedCartFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- SavedCartRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
+    featureModules: {
+        [CART_SAVED_CART_FEATURE]: {
+            module: () => import().then((m) => m.SavedCartModule),
+        },
+    }
+})
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
+    i18n: {
+        resources: savedCartTranslations, chunks: savedCartTranslationChunksConfig,
+    },
+})
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/smartedit/smart-edit-feature.module.ts
+[15:21:53] found          : SmartEditFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- SmartEditRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
     featureModules: {
         [SMART_EDIT_FEATURE]: {
             module: () => import().then((m) => m.SmartEditModule),
         },
     }
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/product/product-variants-feature.module.ts
-[12:54:32] found          : ProductVariantsFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- ProductVariantsRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/checkout/checkout-feature.module.ts
+[15:21:53] found          : CheckoutFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- CheckoutRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
+    featureModules: {
+        [CHECKOUT_FEATURE]: {
+            module: () => import().then((m) => m.CheckoutModule),
+        },
+    }
+})
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
+    i18n: {
+        resources: checkoutTranslations, chunks: checkoutTranslationChunksConfig,
+    },
+})
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/product/product-variants-feature.module.ts
+[15:21:53] found          : ProductVariantsFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- ProductVariantsRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
     featureModules: {
         [PRODUCT_VARIANTS_FEATURE]: {
             module: () => import().then((m) => m.ProductVariantsModule),
         },
     }
 })
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
     i18n: {
         resources: productVariantsTranslations, chunks: productVariantsTranslationChunksConfig,
     },
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/user/user-feature.module.ts
-[12:54:32] found          : UserFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- UserAccountRootModule
-[12:54:32]                : 	- UserProfileRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
-    featureModules: {
-        [USER_ACCOUNT_FEATURE]: {
-            module: () => import().then((m) => m.UserAccountModule),
-        },
-    }
-})
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
-    i18n: {
-        resources: userAccountTranslations, chunks: userAccountTranslationChunksConfig,
-    },
-})
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
-    featureModules: {
-        [USER_PROFILE_FEATURE]: {
-            module: () => import().then((m) => m.UserProfileModule),
-        },
-    }
-})
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
-    i18n: {
-        resources: userProfileTranslations, chunks: userProfileTranslationChunksConfig,
-    },
-})
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/storefinder/store-finder-feature.module.ts
-[12:54:32] found          : StoreFinderFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- StoreFinderRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/storefinder/store-finder-feature.module.ts
+[15:21:53] found          : StoreFinderFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- StoreFinderRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
     featureModules: {
         [STORE_FINDER_FEATURE]: {
             module: () => import().then((m) => m.StoreFinderModule),
         },
     }
 })
-[12:54:32]                : 	- provideConfig(<I18nConfig>{
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
     i18n: {
         resources: storeFinderTranslations, chunks: storeFinderTranslationChunksConfig,
     },
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/src/app/spartacus/features/tracking/personalization-feature.module.ts
-[12:54:32] found          : PersonalizationFeatureModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- PersonalizationRootModule
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig(<CmsConfig>{
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/tracking/personalization-feature.module.ts
+[15:21:53] found          : PersonalizationFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- PersonalizationRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
     featureModules: {
         [PERSONALIZATION_FEATURE]: {
             module: () => import().then((m) => m.PersonalizationModule),
         },
     }
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.module.ts
-[12:54:32] found          : TestGeolocationBlockingModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- CommonModule
-[12:54:32]                : 	- NgbModule
-[12:54:32]                : 	- I18nModule
-[12:54:32]                : 	- ConfigModule
-[12:54:32]                : - exports:
-[12:54:32]                : 	- TestGeolocationBlockingComponent
-[12:54:32]                : - declarations:
-[12:54:32]                : 	- TestGeolocationBlockingComponent
-[12:54:32]                : - providers:
-[12:54:32]                : 	- LanguageService
-[12:54:32]                : 	- provideConfig({
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/src/app/spartacus/features/user/user-feature.module.ts
+[15:21:53] found          : UserFeatureModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- UserAccountRootModule
+[15:21:53]                : 	- UserProfileRootModule
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
+    featureModules: {
+        [USER_ACCOUNT_FEATURE]: {
+            module: () => import().then((m) => m.UserAccountModule),
+        },
+    }
+})
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
+    i18n: {
+        resources: userAccountTranslations, chunks: userAccountTranslationChunksConfig,
+    },
+})
+[15:21:53]                : 	- provideConfig(<CmsConfig>{
+    featureModules: {
+        [USER_PROFILE_FEATURE]: {
+            module: () => import().then((m) => m.UserProfileModule),
+        },
+    }
+})
+[15:21:53]                : 	- provideConfig(<I18nConfig>{
+    i18n: {
+        resources: userProfileTranslations, chunks: userProfileTranslationChunksConfig,
+    },
+})
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.ts
+[15:21:53] found          : GeolocationBlockingComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.model.ts
+[15:21:53] found          : GeolocationBlockingModel
+[15:21:53] found          : AfterContentInit
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.module.ts
+[15:21:53] found          : TestGeolocationBlockingModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- CommonModule
+[15:21:53]                : 	- NgbModule
+[15:21:53]                : 	- I18nModule
+[15:21:53]                : 	- ConfigModule
+[15:21:53]                : - exports:
+[15:21:53]                : 	- GeolocationBlockingComponent
+[15:21:53]                : - declarations:
+[15:21:53]                : 	- GeolocationBlockingComponent
+[15:21:53]                : - providers:
+[15:21:53]                : 	- LanguageService
+[15:21:53]                : 	- provideConfig({
     i18n: {
         backend: {
             loadPath: ,
         }, chunks: translationChunksConfig, fallbackLang: ,
     },
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.model.ts
-[12:54:32] found          : TestGeolocationBlockingModel
-[12:54:32] found          : AfterContentInit
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/geolocation/test-geolocation-blocking.ts
-[12:54:32] found          : TestGeolocationBlockingComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.component.ts
-[12:54:32] found          : TestRegisterGeolocationComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.model.ts
-[12:54:32] found          : TestRegisterGeolocationModel
-[12:54:32] found          : AfterContentInit
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation/test-register-geolocation.module.ts
-[12:54:32] found          : TestRegisterGeolocationModule
-[12:54:32]                : - imports:
-[12:54:32]                : 	- CommonModule
-[12:54:32]                : 	- NgbModule
-[12:54:32]                : 	- I18nModule
-[12:54:32]                : 	- ConfigModule
-[12:54:32]                : - exports:
-[12:54:32]                : 	- TestRegisterGeolocationComponent
-[12:54:32]                : - declarations:
-[12:54:32]                : 	- TestRegisterGeolocationComponent
-[12:54:32]                : - providers:
-[12:54:32]                : 	- provideConfig({
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.ts
+[15:21:53] found          : RegisterGeolocationComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.model.ts
+[15:21:53] found          : RegisterGeolocationModel
+[15:21:53] found          : AfterContentInit
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.module.ts
+[15:21:53] found          : RegisterGeolocationModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- CommonModule
+[15:21:53]                : 	- NgbModule
+[15:21:53]                : 	- I18nModule
+[15:21:53]                : 	- ConfigModule
+[15:21:53]                : - exports:
+[15:21:53]                : 	- RegisterGeolocationComponent
+[15:21:53]                : - declarations:
+[15:21:53]                : 	- RegisterGeolocationComponent
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig({
     i18n: {
         backend: {
             loadPath: ,
         }, chunks: translationChunksConfig, fallbackLang: ,
     },
 })
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.model.ts
-[12:54:32] found          : TestRegisterGeolocationTopModel
-[12:54:32] found          : AfterContentInit
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.component.ts
-[12:54:32] found          : TestRegisterGeolocationTopComponent
-[12:54:32] parsing        : /Users/josemariamartinez/testing-components-ng/projects/xplorecomponents/src/lib/components/register-geolocation-top/test-register-geolocation-top.module.ts
-[12:54:32] found          : TestRegisterGeolocationTopModule
-[12:54:33]                : - imports:
-[12:54:33]                : 	- CommonModule
-[12:54:33]                : 	- NgbModule
-[12:54:33]                : 	- I18nModule
-[12:54:33]                : 	- ConfigModule
-[12:54:33]                : - exports:
-[12:54:33]                : 	- TestRegisterGeolocationTopComponent
-[12:54:33]                : - declarations:
-[12:54:33]                : 	- TestRegisterGeolocationTopComponent
-[12:54:33]                : - providers:
-[12:54:33]                : 	- provideConfig({
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.ts
+[15:21:53] found          : RegisterGeolocationTopComponent
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts
+[15:21:53] found          : RegisterGeolocationTopModel
+[15:21:53] found          : AfterContentInit
+[15:21:53] parsing        : /Users/josemariamartinez/aplication/explorecomponentes/projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.module.ts
+[15:21:53] found          : TestRegisterGeolocationTopModule
+[15:21:53]                : - imports:
+[15:21:53]                : 	- CommonModule
+[15:21:53]                : 	- NgbModule
+[15:21:53]                : 	- I18nModule
+[15:21:53]                : 	- ConfigModule
+[15:21:53]                : - exports:
+[15:21:53]                : 	- RegisterGeolocationTopComponent
+[15:21:53]                : - declarations:
+[15:21:53]                : 	- RegisterGeolocationTopComponent
+[15:21:53]                : - providers:
+[15:21:53]                : 	- provideConfig({
     i18n: {
         backend: {
             loadPath: ,
         }, chunks: translationChunksConfig, fallbackLang: ,
     },
 })
-[12:54:33] -------------------
-[12:54:33] Project statistics 
-[12:54:33] - files      : 139
-[12:54:33] - module     : 17
-[12:54:33] - component  : 10
-[12:54:33] - interface  : 6
-[12:54:33] -------------------
-[12:54:33] Prepare components
-[12:54:33]  AppComponent has a templateUrl, include it
-[12:54:33]  AppComponent has styleUrls, include them
-[12:54:33]  ButtonComponent has styleUrls, include them
-[12:54:33]  GeolocationBlockingModal has a templateUrl, include it
-[12:54:33]  HeaderComponent has styleUrls, include them
-[12:54:33]  PageComponent has styleUrls, include them
-[12:54:33]  RegisterGeolocationModal has a templateUrl, include it
-[12:54:33]  RegisterGeolocationTop has a templateUrl, include it
-[12:54:33]  RegisterGeolocationTop has styleUrls, include them
-[12:54:33]  TestGeolocationBlockingComponent has a templateUrl, include it
-[12:54:33]  TestRegisterGeolocationComponent has a templateUrl, include it
-[12:54:33]  TestRegisterGeolocationTopComponent has a templateUrl, include it
-[12:54:33] Prepare modules
-[12:54:33] Prepare interfaces
-[12:54:33] Prepare miscellaneous
-[12:54:33] Process documentation coverage report
-[12:54:33] Generating documentation in export format json
-[12:54:33] Documentation generated in ./ in 4.243 seconds
+[15:21:53]                : - bootstrap:
+[15:21:53]                : 	- RegisterGeolocationTopComponent
+[15:21:53] -------------------
+[15:21:53] Project statistics 
+[15:21:53] - files      : 147
+[15:21:53] - module     : 17
+[15:21:53] - component  : 7
+[15:21:53] - interface  : 6
+[15:21:53] -------------------
+[15:21:53] Prepare components
+[15:21:53]  AppComponent has a templateUrl, include it
+[15:21:53]  AppComponent has styleUrls, include them
+[15:21:53]  ButtonComponent has styleUrls, include them
+[15:21:53]  GeolocationBlockingComponent has a templateUrl, include it
+[15:21:53]  GeolocationBlockingComponent has styleUrls, include them
+[15:21:53]  HeaderComponent has styleUrls, include them
+[15:21:53]  PageComponent has styleUrls, include them
+[15:21:53]  RegisterGeolocationComponent has a templateUrl, include it
+[15:21:53]  RegisterGeolocationTopComponent has a templateUrl, include it
+[15:21:53]  RegisterGeolocationTopComponent has styleUrls, include them
+[15:21:53] Prepare modules
+[15:21:53] Prepare interfaces
+[15:21:53] Prepare miscellaneous
+[15:21:53] Process documentation coverage report
+[15:21:53] Generating documentation in export format json
+[15:21:53] Documentation generated in ./ in 5.553 seconds
 info @storybook/angular v6.3.8
 info 
-info => Cleaning outputDir: /var/folders/z4/b591xjxn1zg01g92kxjjtzwh0000gn/T/chromatic--86755-twNRGRSmkn5X
+info => Cleaning outputDir: /var/folders/z4/b591xjxn1zg01g92kxjjtzwh0000gn/T/chromatic--66230-Gf1Mj9Vx58f3
 info => Loading presets
 info => Compiling preview..
-info => Loading 1 config file in "/Users/josemariamartinez/testing-components-ng/.storybook"
-info => Loading 9 other files in "/Users/josemariamartinez/testing-components-ng/.storybook"
-info => Adding stories defined in "/Users/josemariamartinez/testing-components-ng/.storybook/main.js"
+info => Loading 1 config file in "/Users/josemariamartinez/aplication/explorecomponentes/.storybook"
+info => Loading 9 other files in "/Users/josemariamartinez/aplication/explorecomponentes/.storybook"
+info => Adding stories defined in "/Users/josemariamartinez/aplication/explorecomponentes/.storybook/main.js"
 info => Found custom tsconfig.json
-Compiling @angular/animations : fesm2015 as esm2015
-Compiling @angular/core : fesm2015 as esm2015
-Compiling @angular/animations/browser : fesm2015 as esm2015
-Compiling @angular/animations/browser/testing : fesm2015 as esm2015
-Compiling @angular/common : fesm2015 as esm2015
-Compiling @angular/common/http : fesm2015 as esm2015
-Compiling @angular/common/http/testing : fesm2015 as esm2015
-Compiling @angular/elements : fesm2015 as esm2015
-Compiling @angular/platform-browser : fesm2015 as esm2015
-Compiling @angular/platform-browser/animations : fesm2015 as esm2015
-Compiling @angular/core/testing : fesm2015 as esm2015
-Compiling @angular/platform-browser-dynamic : fesm2015 as esm2015
-Compiling @angular/platform-browser/testing : fesm2015 as esm2015
-Compiling @angular/compiler/testing : fesm2015 as esm2015
-Compiling @angular/platform-browser-dynamic/testing : fesm2015 as esm2015
-Compiling @angular/common/testing : fesm2015 as esm2015
-Compiling @angular/router : fesm2015 as esm2015
-Compiling @angular/router/testing : fesm2015 as esm2015
-Compiling @angular/service-worker : fesm2015 as esm2015
-Compiling @angular/service-worker/config : fesm2015 as esm2015
-Compiling @angular/forms : fesm2015 as esm2015
-Compiling @ng-bootstrap/ng-bootstrap : fesm2015 as esm2015
-Compiling @ng-select/ng-select : fesm2015 as esm2015
-Compiling @ngrx/store : fesm2015 as esm2015
-Compiling @ngrx/effects : fesm2015 as esm2015
-Compiling @ngrx/effects/testing : fesm2015 as esm2015
-Compiling @ngrx/router-store : fesm2015 as esm2015
-Compiling @ngrx/store/testing : fesm2015 as esm2015
-Compiling @nguniversal/common : fesm2015 as esm2015
-Compiling @nguniversal/common/clover : fesm2015 as esm2015
-Compiling @nguniversal/express-engine/tokens : fesm2015 as esm2015
-Compiling angular-oauth2-oidc : fesm2015 as esm2015
-Compiling ngx-infinite-scroll : es2015 as esm2015
 info => Using implicit CSS loaders
 info => Loading angular-cli config
 info => Using angular project "testing-spartacus-ng:build" for configuring Storybook
@@ -785,51 +769,49 @@ Starting type checking service...
 <s> [webpack.Progress] 10% building 0/1 entries 0/0 dependencies 0/0 modules
 <s> [webpack.Progress] 10% building import loader ./node_modules/babel-loader/lib/index.js
 <s> [webpack.Progress] 10% building 0/20 entries 3/20 dependencies 0/3 modules
-<s> [webpack.Progress] 10% building 0/20 entries 4/20 dependencies 0/3 modules
-<s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/node_modules/style-loader/dist/cjs.js
-<s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/node_modules/css-loader/dist/cjs.js
-<s> [webpack.Progress] 10% building import loader ./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/style-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/css-loader/dist/cjs.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/postcss-loader/dist/cjs.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/resolve-url-loader/index.js
 <s> [webpack.Progress] 10% building import loader ./node_modules/sass-loader/dist/cjs.js
-<s> [webpack.Progress] 10% building 0/20 entries 4/20 dependencies 0/4 modules
-<s> [webpack.Progress] 10% building 0/20 entries 128/200 dependencies 10/64 modules
-<s> [webpack.Progress] 12% building 1/20 entries 185/269 dependencies 13/100 modules
-<s> [webpack.Progress] 12% building import loader ./node_modules/@mdx-js/loader/index.js
-<s> [webpack.Progress] 12% building 1/20 entries 372/436 dependencies 16/200 modules
-<s> [webpack.Progress] 12% building import loader ./node_modules/@storybook/angular/node_modules/ts-loader/index.js
-<s> [webpack.Progress] 12% building import loader ./node_modules/@storybook/angular/dist/ts3.9/server/ngx-template-loader/index.js
-<s> [webpack.Progress] 12% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
-<s> [webpack.Progress] 12% building 1/20 entries 394/436 dependencies 16/214 modules
-<s> [webpack.Progress] 12% building 1/20 entries 484/865 dependencies 21/228 modules
-[BABEL] Note: The code generator has deoptimised the styling of /Users/josemariamartinez/testing-components-ng/node_modules/prettier/standalone.js as it exceeds the max of 500KB.
-<s> [webpack.Progress] 12% building 1/20 entries 558/865 dependencies 22/245 modules
-<s> [webpack.Progress] 12% building 1/20 entries 1497/1541 dependencies 105/400 modules
-<s> [webpack.Progress] 12% building 1/20 entries 1770/1900 dependencies 232/466 modules
-<s> [webpack.Progress] 12% building import loader ./node_modules/@storybook/angular/node_modules/raw-loader/dist/cjs.js
-<s> [webpack.Progress] 12% building 1/20 entries 2115/2187 dependencies 263/527 modules
-<s> [webpack.Progress] 13% building 1/20 entries 2300/2480 dependencies 299/578 modules
-<s> [webpack.Progress] 14% building 1/20 entries 3200/3269 dependencies 418/875 modules
-<s> [webpack.Progress] 17% building 1/20 entries 3900/3962 dependencies 645/1013 modules
-<s> [webpack.Progress] 21% building 1/20 entries 4800/4881 dependencies 1030/1216 modules
-<s> [webpack.Progress] 22% building 2/20 entries 5153/5188 dependencies 1153/1303 modules
-<s> [webpack.Progress] 22% building 3/20 entries 5153/5188 dependencies 1154/1303 modules
-<s> [webpack.Progress] 22% building 4/20 entries 5153/5188 dependencies 1155/1303 modules
-<s> [webpack.Progress] 23% building 5/20 entries 5153/5188 dependencies 1156/1303 modules
-<s> [webpack.Progress] 26% building 6/20 entries 5153/5188 dependencies 1157/1303 modules
-<s> [webpack.Progress] 29% building 7/20 entries 5153/5188 dependencies 1158/1303 modules
-<s> [webpack.Progress] 32% building 8/20 entries 5153/5188 dependencies 1159/1303 modules
-<s> [webpack.Progress] 34% building 9/20 entries 5153/5188 dependencies 1160/1303 modules
-<s> [webpack.Progress] 37% building 10/20 entries 5153/5188 dependencies 1161/1303 modules
-<s> [webpack.Progress] 40% building 11/20 entries 5700/5712 dependencies 1394/1454 modules
-<s> [webpack.Progress] 43% building 12/20 entries 5717/5721 dependencies 1426/1458 modules
-<s> [webpack.Progress] 45% building 13/20 entries 5727/5727 dependencies 1445/1462 modules
-<s> [webpack.Progress] 48% building 14/20 entries 5729/5729 dependencies 1448/1463 modules
-<s> [webpack.Progress] 51% building 15/20 entries 5730/5730 dependencies 1450/1463 modules
-<s> [webpack.Progress] 53% building 16/20 entries 5731/5731 dependencies 1452/1463 modules
-<s> [webpack.Progress] 56% building 17/20 entries 5731/5731 dependencies 1457/1463 modules
-<s> [webpack.Progress] 59% building 18/20 entries 5732/5732 dependencies 1459/1463 modules
-<s> [webpack.Progress] 62% building 19/20 entries 5733/5733 dependencies 1461/1463 modules
-<s> [webpack.Progress] 65% building 20/20 entries 5734/5734 dependencies 1463/1463 modules
+<s> [webpack.Progress] 10% building 0/20 entries 11/20 dependencies 0/11 modules
+<s> [webpack.Progress] 10% building 0/20 entries 121/200 dependencies 11/60 modules
+<s> [webpack.Progress] 10% building import loader ./node_modules/ts-loader/index.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/angular/dist/ts3.9/server/ngx-template-loader/index.js
+<s> [webpack.Progress] 10% building import loader ./node_modules/@storybook/source-loader/dist/cjs/index.js
+<s> [webpack.Progress] 10% building 0/20 entries 137/216 dependencies 12/72 modules
+<s> [webpack.Progress] 12% building 1/20 entries 190/265 dependencies 14/105 modules
+[BABEL] Note: The code generator has deoptimised the styling of /Users/josemariamartinez/aplication/explorecomponentes/node_modules/prettier/standalone.js as it exceeds the max of 500KB.
+<s> [webpack.Progress] 12% building 1/20 entries 500/842 dependencies 21/224 modules
+<s> [webpack.Progress] 12% building 1/20 entries 1017/1125 dependencies 49/315 modules
+<s> [webpack.Progress] 12% building 1/20 entries 1100/1182 dependencies 58/338 modules
+<s> [webpack.Progress] 12% building 1/20 entries 1700/1747 dependencies 191/451 modules
+<s> [webpack.Progress] 12% building 1/20 entries 1813/2200 dependencies 225/475 modules
+<s> [webpack.Progress] 12% building import loader ./node_modules/raw-loader/dist/cjs.js
+<s> [webpack.Progress] 12% building 1/20 entries 2180/2242 dependencies 245/655 modules
+<s> [webpack.Progress] 14% building 1/20 entries 2900/2985 dependencies 394/824 modules
+<s> [webpack.Progress] 17% building 1/20 entries 3723/3800 dependencies 639/966 modules
+<s> [webpack.Progress] 19% building 1/20 entries 4200/4262 dependencies 819/1094 modules
+<s> [webpack.Progress] 21% building 1/20 entries 5000/5064 dependencies 1084/1274 modules
+<s> [webpack.Progress] 22% building 2/20 entries 5188/5228 dependencies 1149/1311 modules
+<s> [webpack.Progress] 22% building 3/20 entries 5188/5228 dependencies 1150/1311 modules
+<s> [webpack.Progress] 22% building 4/20 entries 5188/5228 dependencies 1151/1311 modules
+<s> [webpack.Progress] 23% building 5/20 entries 5188/5228 dependencies 1152/1311 modules
+<s> [webpack.Progress] 26% building 6/20 entries 5188/5228 dependencies 1153/1311 modules
+<s> [webpack.Progress] 29% building 7/20 entries 5188/5228 dependencies 1154/1311 modules
+<s> [webpack.Progress] 31% building 8/20 entries 5188/5228 dependencies 1155/1311 modules
+<s> [webpack.Progress] 34% building 9/20 entries 5188/5228 dependencies 1156/1311 modules
+<s> [webpack.Progress] 37% building 10/20 entries 5188/5228 dependencies 1157/1311 modules
+<s> [webpack.Progress] 40% building 11/20 entries 5721/5731 dependencies 1395/1461 modules
+<s> [webpack.Progress] 43% building 12/20 entries 5744/5748 dependencies 1431/1467 modules
+<s> [webpack.Progress] 45% building 13/20 entries 5754/5754 dependencies 1451/1471 modules
+<s> [webpack.Progress] 48% building 14/20 entries 5757/5757 dependencies 1458/1472 modules
+<s> [webpack.Progress] 51% building 15/20 entries 5757/5757 dependencies 1459/1472 modules
+<s> [webpack.Progress] 54% building 16/20 entries 5757/5757 dependencies 1464/1472 modules
+<s> [webpack.Progress] 56% building 17/20 entries 5758/5758 dependencies 1466/1472 modules
+<s> [webpack.Progress] 59% building 18/20 entries 5759/5759 dependencies 1468/1472 modules
+<s> [webpack.Progress] 62% building 19/20 entries 5760/5760 dependencies 1470/1472 modules
+<s> [webpack.Progress] 65% building 20/20 entries 5761/5761 dependencies 1472/1472 modules
 <s> [webpack.Progress] 65% building
 <s> [webpack.Progress] 69% building finish
 <s> [webpack.Progress] 69% building finish
@@ -931,22 +913,22 @@ Starting type checking service...
 <s> [webpack.Progress] 92% sealing asset processing TerserPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.955c4616.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.955c4616.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.134dbbc3.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.134dbbc3.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 278.1710eb55.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 278.1710eb55.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.8f439bc7.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.8f439bc7.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.e6ee11f5.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.e6ee11f5.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.a9b10af4.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.a9b10af4.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.60bfb9dd.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.60bfb9dd.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 638.d13d5f53.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 638.d13d5f53.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9d9fb293.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin main.9d9fb293.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.3881e151.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin runtime~main.3881e151.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 909.9ce5f857.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 909.9ce5f857.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.8f691378.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 913.8f691378.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.fcc4f2ec.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 881.fcc4f2ec.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.a6a6d8fb.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 459.a6a6d8fb.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.7bdd3873.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 331.7bdd3873.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 391.d9487839.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin 391.d9487839.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin assets/webApplicationInjector.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin assets/webApplicationInjector.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing SourceMapDevToolPlugin resolve sources
@@ -957,22 +939,22 @@ Starting type checking service...
 <s> [webpack.Progress] 92% sealing asset processing HtmlWebpackPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.222e63b9.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.222e63b9.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.37970ad0.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.37970ad0.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 913.f588e0ff.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 913.f588e0ff.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 881.a6508d60.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 881.a6508d60.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.994acff7.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin main.994acff7.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.28de9dab.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin runtime~main.28de9dab.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 913.d45e9882.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 913.d45e9882.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 881.ef4639d6.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 881.ef4639d6.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 459.f30db4aa.iframe.bundle.js generate SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 459.f30db4aa.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 278.5483cf7a.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 278.5483cf7a.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 331.aee4ddcf.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 331.aee4ddcf.iframe.bundle.js generated SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 638.cab814dd.iframe.bundle.js generate SourceMap
-<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 638.cab814dd.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 909.57cc776a.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 909.57cc776a.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 331.fb3a5f59.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 331.fb3a5f59.iframe.bundle.js generated SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 391.7d5f8288.iframe.bundle.js generate SourceMap
+<s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin 391.7d5f8288.iframe.bundle.js generated SourceMap
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin resolve sources
 <s> [webpack.Progress] 92% sealing asset processing RealContentHashPlugin
 <s> [webpack.Progress] 92% sealing asset processing AnyComponentStyleBudgetChecker
@@ -1002,29 +984,29 @@ Starting type checking service...
 <s> [webpack.Progress] 99% cache begin idle
 <s> [webpack.Progress] 100% 
 
-info => Preview built (53 s)
-WARN Module Warning (from ./node_modules/@angular-devkit/build-angular/node_modules/postcss-loader/dist/cjs.js):
+info => Preview built (52 s)
+WARN System.import() is deprecated and will be removed soon. Use import() instead.
+WARN For more info visit https://webpack.js.org/guides/code-splitting/
+WARN System.import() is deprecated and will be removed soon. Use import() instead.
+WARN For more info visit https://webpack.js.org/guides/code-splitting/
+WARN Module Warning (from ./node_modules/postcss-loader/dist/cjs.js):
 WARN Warning
 WARN 
 WARN (10684:3) postcss-preset-env: start value has mixed support, consider using flex-start instead
-WARN System.import() is deprecated and will be removed soon. Use import() instead.
-WARN For more info visit https://webpack.js.org/guides/code-splitting/
-WARN System.import() is deprecated and will be removed soon. Use import() instead.
-WARN For more info visit https://webpack.js.org/guides/code-splitting/
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
 WARN Assets: 
-WARN   main.222e63b9.iframe.bundle.js (864 KiB)
-WARN   638.cab814dd.iframe.bundle.js (4.5 MiB)
+WARN   main.994acff7.iframe.bundle.js (821 KiB)
+WARN   391.7d5f8288.iframe.bundle.js (6.41 MiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
-WARN   main (5.35 MiB)
-WARN       runtime~main.37970ad0.iframe.bundle.js
-WARN       638.cab814dd.iframe.bundle.js
-WARN       main.222e63b9.iframe.bundle.js
+WARN   main (7.22 MiB)
+WARN       runtime~main.28de9dab.iframe.bundle.js
+WARN       391.7d5f8288.iframe.bundle.js
+WARN       main.994acff7.iframe.bundle.js
 WARN 
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 99% cache shutdown
 <s> [webpack.Progress] 100% 
 
-info => Output directory: /var/folders/z4/b591xjxn1zg01g92kxjjtzwh0000gn/T/chromatic--86755-twNRGRSmkn5X
+info => Output directory: /var/folders/z4/b591xjxn1zg01g92kxjjtzwh0000gn/T/chromatic--66230-Gf1Mj9Vx58f3

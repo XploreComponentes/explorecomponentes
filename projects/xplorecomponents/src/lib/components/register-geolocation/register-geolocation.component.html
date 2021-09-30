@@ -6,8 +6,8 @@
               <button type="button" class="close modal-close btn-close-modal" aria-label="Close" (click)="dismiss('Cross click')">
                   <span aria-hidden="true">×</span>
                 </button>
-            <div [innerHTML]="data.observable?.content"></div>
-            <button class="btn btn-primary btn-block btn-change-location" (click)="changeLocation(data.observable?.country)">Cambiar localización a {{ data.observable?.country }}</button>
+            <div [innerHTML]="modalBody"></div>
+            <button class="btn btn-primary btn-block btn-change-location" (click)="changeLocation(currentCountry)">Cambiar localización a {{ currentCountry }}</button>
           </div>
         </div>
       </div>

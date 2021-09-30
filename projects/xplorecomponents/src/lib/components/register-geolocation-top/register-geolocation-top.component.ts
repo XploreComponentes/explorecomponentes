@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { CmsComponentData } from '@spartacus/storefront';
 import { RegisterGeolocationTopModel } from './register-geolocation-top.model';
@@ -21,7 +21,7 @@ import { RegisterGeolocationTopModel } from './register-geolocation-top.model';
   ]
   })
 
-  export class RegisterGeolocationTopComponent {
+  export class RegisterGeolocationTopComponent implements OnInit{
 
     @Input()
     currentCountry?: string;
@@ -38,6 +38,14 @@ import { RegisterGeolocationTopModel } from './register-geolocation-top.model';
     public component: CmsComponentData<RegisterGeolocationTopModel>
   ) {}
 
+  ngOnInit() {
+    if(this.component?.data$) {
+      this.component.data$.subscribe(data => {
+        this.currentCountry = data.country,
+        this.message = data.content;
+      })
+    }
+  }
     get stateName() {
       return this.hide ? 'hide' : 'show';
     }

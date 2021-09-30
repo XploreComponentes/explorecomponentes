@@ -1,6 +1,6 @@
 {
   "name": "explore-componentes",
-  "version": "0.0.7",
+  "version": "0.0.11",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"

@@ -27,34 +27,7 @@
         },
         {
             "name": "AfterContentInit",
-            "id": "interface-AfterContentInit-fad3f9fff7f5da575c4d96232bf4aff3-1",
-            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts",
-            "deprecated": false,
-            "deprecationMessage": "",
-            "type": "interface",
-            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface RegisterGeolocationTopModel extends CmsComponent {\n    country?: string;\n    content?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
-            "properties": [],
-            "indexSignatures": [],
-            "kind": 166,
-            "methods": [
-                {
-                    "name": "ngAfterContentInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 9,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "isDuplicate": true,
-            "duplicateId": 1,
-            "duplicateName": "AfterContentInit-1"
-        },
-        {
-            "name": "AfterContentInit",
-            "id": "interface-AfterContentInit-6dc79a9e900524f5a873097e0de16999-2",
+            "id": "interface-AfterContentInit-6dc79a9e900524f5a873097e0de16999-1",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.model.ts",
             "deprecated": false,
             "deprecationMessage": "",
@@ -71,6 +44,33 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "AfterContentInit-1"
+        },
+        {
+            "name": "AfterContentInit",
+            "id": "interface-AfterContentInit-fad3f9fff7f5da575c4d96232bf4aff3-2",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\n\nexport interface RegisterGeolocationTopModel extends CmsComponent {\n    country?: string;\n    content?: string;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 166,
+            "methods": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 9,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -367,7 +367,7 @@
         },
         {
             "name": "GeolocationBlockingComponent",
-            "id": "component-GeolocationBlockingComponent-5ccead4cc51217758ff5e85609fc2094",
+            "id": "component-GeolocationBlockingComponent-86c6a136b88af863a5b57697013d0f8c",
             "file": "projects/xplorecomponents/src/lib/components/geolocation-blocking/geolocation-blocking.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -411,7 +411,7 @@
                     "type": "CmsComponentData<GeolocationBlockingModel>",
                     "optional": false,
                     "description": "",
-                    "line": 24,
+                    "line": 23,
                     "modifierKind": [
                         123
                     ]
@@ -453,24 +453,9 @@
                     "type": "LanguageService",
                     "optional": false,
                     "description": "",
-                    "line": 26,
+                    "line": 25,
                     "modifierKind": [
                         123
-                    ]
-                },
-                {
-                    "name": "modalData",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "TemplateRef<any>",
-                    "optional": false,
-                    "description": "",
-                    "line": 21,
-                    "decorators": [
-                        {
-                            "name": "ViewChild",
-                            "stringifiedArguments": "'modalData', {static: false}"
-                        }
                     ]
                 }
             ],
@@ -489,7 +474,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 47,
+                    "line": 54,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -518,7 +503,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 37,
+                    "line": 44,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -537,6 +522,16 @@
                     ]
                 },
                 {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
                     "name": "openModal",
                     "args": [
                         {
@@ -549,7 +544,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 29,
+                    "line": 36,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -577,7 +572,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 51,
+                    "line": 58,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -600,7 +595,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, TemplateRef, ViewChild } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { LanguageService } from '@spartacus/core';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { GeolocationBlockingModel } from './geolocation-blocking.model';\n\n@Component({\n    selector: 'geolocation-blocking-modal',\n    templateUrl: './geolocation-blocking.component.html',\n    styleUrls: ['./geolocation-blocking.component.scss'],\n  })\n  export class GeolocationBlockingComponent {\n\n    @Input()\n    currentCountry?: string;\n\n    closeResult = '';\n    countryList: Array<{code: string, text: string}> = [{code: \"ja\", text: \"Japonés\"}, {code: \"en\", text: \"Inglés\"}, {code: \"de\", text: \"Holandés\"}, {code: \"zh\", text: \"Chino\"}];\n    countrySelected:string = '';\n    language: boolean = false;\n    @ViewChild(\"modalData\", {static: false}) modalData: TemplateRef<any>;\n\n    constructor(\n        public component: CmsComponentData<GeolocationBlockingModel>,\n        private modalService: NgbModal,\n        public languageService: LanguageService) {}\n\n\n    openModal(content: any) {\n      this.modalService.open(this.modalData).result.then((result) => {\n        this.closeResult = `Closed with: ${result}`;\n      }, (reason) => {\n        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n      });\n    }\n  \n    private getDismissReason(reason: any): string {\n      if (reason === ModalDismissReasons.ESC) {\n        return 'by pressing ESC';\n      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n        return 'by clicking on a backdrop';\n      } else {\n        return  `with: ${reason}`;\n      }\n    }\n\n    dismiss(reason?: any) {\n      this.modalService.dismissAll(reason);\n    }\n\n    setLanguage(country: string) {\n      this.countrySelected = country;\n      this.languageService.setActive(country);\n      this.countrySelected = 'Country changed to ' + country;\n      this.modalService.dismissAll('By changing country');\n    }\n  }\n\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { LanguageService } from '@spartacus/core';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { GeolocationBlockingModel } from './geolocation-blocking.model';\n\n@Component({\n    selector: 'geolocation-blocking-modal',\n    templateUrl: './geolocation-blocking.component.html',\n    styleUrls: ['./geolocation-blocking.component.scss'],\n  })\n  export class GeolocationBlockingComponent implements OnInit{\n\n    @Input()\n    currentCountry?: string;\n\n    closeResult = '';\n    countryList: Array<{code: string, text: string}> = [{code: \"ja\", text: \"Japonés\"}, {code: \"en\", text: \"Inglés\"}, {code: \"de\", text: \"Holandés\"}, {code: \"zh\", text: \"Chino\"}];\n    countrySelected:string = '';\n    language: boolean = false;\n\n    constructor(\n        public component: CmsComponentData<GeolocationBlockingModel>,\n        private modalService: NgbModal,\n        public languageService: LanguageService) {}\n\n\n    ngOnInit() {\n      if(this.component?.data$) {\n        this.component.data$.subscribe(data => {\n          this.currentCountry = data.country;\n        })\n      }\n    }    \n\n    openModal(content: any) {\n      this.modalService.open(content).result.then((result) => {\n        this.closeResult = `Closed with: ${result}`;\n      }, (reason) => {\n        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n      });\n    }\n  \n    private getDismissReason(reason: any): string {\n      if (reason === ModalDismissReasons.ESC) {\n        return 'by pressing ESC';\n      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n        return 'by clicking on a backdrop';\n      } else {\n        return  `with: ${reason}`;\n      }\n    }\n\n    dismiss(reason?: any) {\n      this.modalService.dismissAll(reason);\n    }\n\n    setLanguage(country: string) {\n      this.countrySelected = country;\n      this.languageService.setActive(country);\n      this.countrySelected = 'Country changed to ' + country;\n      this.modalService.dismissAll('By changing country');\n    }\n  }\n\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -634,7 +629,7 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 21,
+                "line": 20,
                 "jsdoctags": [
                     {
                         "name": "component",
@@ -665,7 +660,10 @@
                     }
                 ]
             },
-            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n  <ng-template #modalData let-modal class=\"country-modal\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header\">\n            <h4 class=\"modal-title\">Country Selector</h4>\n            <button type=\"button\" class=\"close modal-close\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n              <span aria-hidden=\"true\">×</span>\n            </button>\n          </div>\n          <div class=\"modal-body\">\n            <p>Current country by IP: {{ data.observable?.country }}</p>\n            <div ngbDropdown>\n              <button class=\"btn btn-warning\" id=\"countries\" \n                      ngbDropdownToggle>Select a country</button>\n              <div ngbDropdownMenu=\"countries\" class=\"dropdown-menu\">\n                <button \n                  id=\"{{'Clear_' + indice}}\"\n                  class=\"button-dropdown\"\n                \n                  ngbDropdownItem *ngFor=\"let countryLang of countryList; let indice=index\"\n                  (click) = \"setLanguage(countryLang.code)\"\n                >\n                  {{ countryLang.text }}\n                </button>\n              </div>\n            </div>\n          </div>\n          <div class=\"modal-footer\">\n            <button type=\"button\" class=\"btn btn-info btn-close-modal\" (click)=\"dismiss('Save click')\">Close</button>\n          </div>\n        </div>\n      </div>\n  </ng-template>\n  \n  <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(modalData)\">Show country selector</button>\n  <br>\n  <p>Country selected: <span class=\"country-selected\">{{ countrySelected }}</span></p>\n</ng-container>\n"
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n  <ng-template #modalData let-modal class=\"country-modal\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header\">\n            <h4 class=\"modal-title\">Country Selector</h4>\n            <button type=\"button\" class=\"close modal-close\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n              <span aria-hidden=\"true\">×</span>\n            </button>\n          </div>\n          <div class=\"modal-body\">\n            <p>Current country by IP: {{ currentCountry }}</p>\n            <div ngbDropdown>\n              <button class=\"btn btn-warning\" id=\"countries\" \n                      ngbDropdownToggle>Select a country</button>\n              <div ngbDropdownMenu=\"countries\" class=\"dropdown-menu\">\n                <button \n                  id=\"{{'Clear_' + indice}}\"\n                  class=\"button-dropdown\"\n                \n                  ngbDropdownItem *ngFor=\"let countryLang of countryList; let indice=index\"\n                  (click) = \"setLanguage(countryLang.code)\"\n                >\n                  {{ countryLang.text }}\n                </button>\n              </div>\n            </div>\n          </div>\n          <div class=\"modal-footer\">\n            <button type=\"button\" class=\"btn btn-info btn-close-modal\" (click)=\"dismiss('Save click')\">Close</button>\n          </div>\n        </div>\n      </div>\n  </ng-template>\n  \n  <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(modalData)\">Show country selector</button>\n  <br>\n  <p>Country selected: <span class=\"country-selected\">{{ countrySelected }}</span></p>\n</ng-container>\n"
         },
         {
             "name": "HeaderComponent",
@@ -813,7 +811,7 @@
         },
         {
             "name": "RegisterGeolocationComponent",
-            "id": "component-RegisterGeolocationComponent-f14c5892bc1f4d81ebba2e65d9398394",
+            "id": "component-RegisterGeolocationComponent-9cde854ebb1401db457ca3ed1c67172a",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -882,7 +880,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 47,
+                    "line": 56,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -912,7 +910,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 43,
+                    "line": 52,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -941,7 +939,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 33,
+                    "line": 42,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -960,6 +958,16 @@
                     ]
                 },
                 {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
                     "name": "openModal",
                     "args": [
                         {
@@ -972,7 +980,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 25,
+                    "line": 34,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -995,7 +1003,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { RegisterGeolocationModel } from './register-geolocation.model';\n\n@Component({\n    selector: 'register-geolocation-modal',\n    templateUrl: './register-geolocation.component.html'\n  })\n  export class RegisterGeolocationComponent {\n\n    @Input()\n    currentCountry?: string;\n\n    @Input()\n    modalBody?: string;\n\n    closeResult?: string;\n\n    constructor(\n      public component: CmsComponentData<RegisterGeolocationModel>,\n        private modalService: NgbModal\n        ) {}\n  \n        openModal(content: any) {\n      this.modalService.open(content).result.then((result) => {\n        this.closeResult = `Closed with: ${result}`;\n      }, (reason) => {\n        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n      });\n    }\n  \n    private getDismissReason(reason: any): string {\n      if (reason === ModalDismissReasons.ESC) {\n        return 'by pressing ESC';\n      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n        return 'by clicking on a backdrop';\n      } else {\n        return  `with: ${reason}`;\n      }\n    }\n\n    dismiss(reason?: any) {\n      this.modalService.dismissAll(reason);\n    }\n\n    changeLocation(country?: string) {\n      this.modalService.dismissAll('By changing country');\n      alert('Se ha cambiado su localización a ' + country);\n    }\n  }\n\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { RegisterGeolocationModel } from './register-geolocation.model';\n\n@Component({\n    selector: 'register-geolocation-modal',\n    templateUrl: './register-geolocation.component.html'\n  })\n  export class RegisterGeolocationComponent {\n\n    @Input()\n    currentCountry?: string;\n\n    @Input()\n    modalBody?: string;\n\n    closeResult?: string;\n\n    constructor(\n      public component: CmsComponentData<RegisterGeolocationModel>,\n        private modalService: NgbModal\n        ) {}\n  \n      ngOnInit() {\n        if(this.component?.data$) {\n          this.component.data$.subscribe(data => {\n            this.currentCountry = data.country,\n            this.modalBody = data.content;\n          })\n        }\n      }  \n\n        openModal(content: any) {\n      this.modalService.open(content).result.then((result) => {\n        this.closeResult = `Closed with: ${result}`;\n      }, (reason) => {\n        this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;\n      });\n    }\n  \n    private getDismissReason(reason: any): string {\n      if (reason === ModalDismissReasons.ESC) {\n        return 'by pressing ESC';\n      } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {\n        return 'by clicking on a backdrop';\n      } else {\n        return  `with: ${reason}`;\n      }\n    }\n\n    dismiss(reason?: any) {\n      this.modalService.dismissAll(reason);\n    }\n\n    changeLocation(country?: string) {\n      this.modalService.dismissAll('By changing country');\n      alert('Se ha cambiado su localización a ' + country);\n    }\n  }\n\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -1040,11 +1048,11 @@
                     }
                 ]
             },
-            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n  <ng-template #registerModal let-modal class=\"register-modal\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-body\">\n              <button type=\"button\" class=\"close modal-close btn-close-modal\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n                  <span aria-hidden=\"true\">×</span>\n                </button>\n            <div [innerHTML]=\"data.observable?.content\"></div>\n            <button class=\"btn btn-primary btn-block btn-change-location\" (click)=\"changeLocation(data.observable?.country)\">Cambiar localización a {{ data.observable?.country }}</button>\n          </div>\n        </div>\n      </div>\n  </ng-template>\n  \n  <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(registerModal)\">Open modal</button>\n  \n</ng-container>"
+            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n  <ng-template #registerModal let-modal class=\"register-modal\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-body\">\n              <button type=\"button\" class=\"close modal-close btn-close-modal\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n                  <span aria-hidden=\"true\">×</span>\n                </button>\n            <div [innerHTML]=\"modalBody\"></div>\n            <button class=\"btn btn-primary btn-block btn-change-location\" (click)=\"changeLocation(currentCountry)\">Cambiar localización a {{ currentCountry }}</button>\n          </div>\n        </div>\n      </div>\n  </ng-template>\n  \n  <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(registerModal)\">Open modal</button>\n  \n</ng-container>"
         },
         {
             "name": "RegisterGeolocationTopComponent",
-            "id": "component-RegisterGeolocationTopComponent-7ce454d46c91fe47064cd82f41b83770",
+            "id": "component-RegisterGeolocationTopComponent-1ef185f456d05aab501f129101472633",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1121,7 +1129,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 49,
+                    "line": 57,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1142,7 +1150,17 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 45,
+                    "line": 53,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 41,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1154,7 +1172,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { animate, state, style, transition, trigger } from '@angular/animations';\nimport { Component, Input } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { RegisterGeolocationTopModel } from './register-geolocation-top.model';\n\n@Component({\n    selector: 'register-geolocation-top',\n    templateUrl: './register-geolocation-top.component.html',\n    styleUrls: ['./register-geolocation-top.scss'],\n    animations: [\n      trigger('hideMsg', [\n        state('hide', style({\n          opacity: 0\n      })),\n      state('show', style({\n          opacity: 1\n      })),\n        transition('* => *', animate(300))\n    ]),\n  ]\n  })\n\n  export class RegisterGeolocationTopComponent {\n\n    @Input()\n    currentCountry?: string;\n\n    @Input()\n    message?: string;\n\n    @Input()\n    hide?: boolean;\n\n    countrySelected?: string;\n\n  constructor(\n    public component: CmsComponentData<RegisterGeolocationTopModel>\n  ) {}\n\n    get stateName() {\n      return this.hide ? 'hide' : 'show';\n    }\n  \n    closeMsg() {\n      this.hide = !this.hide;\n    }\n  \n    changeLocation(country: string | undefined) {\n      this.closeMsg();\n      this.countrySelected = 'Country changed to ' + country;\n    }\n  }\n\n",
+            "sourceCode": "import { animate, state, style, transition, trigger } from '@angular/animations';\nimport { Component, Input, OnInit } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { RegisterGeolocationTopModel } from './register-geolocation-top.model';\n\n@Component({\n    selector: 'register-geolocation-top',\n    templateUrl: './register-geolocation-top.component.html',\n    styleUrls: ['./register-geolocation-top.scss'],\n    animations: [\n      trigger('hideMsg', [\n        state('hide', style({\n          opacity: 0\n      })),\n      state('show', style({\n          opacity: 1\n      })),\n        transition('* => *', animate(300))\n    ]),\n  ]\n  })\n\n  export class RegisterGeolocationTopComponent implements OnInit{\n\n    @Input()\n    currentCountry?: string;\n\n    @Input()\n    message?: string;\n\n    @Input()\n    hide?: boolean;\n\n    countrySelected?: string;\n\n  constructor(\n    public component: CmsComponentData<RegisterGeolocationTopModel>\n  ) {}\n\n  ngOnInit() {\n    if(this.component?.data$) {\n      this.component.data$.subscribe(data => {\n        this.currentCountry = data.country,\n        this.message = data.content;\n      })\n    }\n  }\n    get stateName() {\n      return this.hide ? 'hide' : 'show';\n    }\n  \n    closeMsg() {\n      this.hide = !this.hide;\n    }\n  \n    changeLocation(country: string | undefined) {\n      this.closeMsg();\n      this.countrySelected = 'Country changed to ' + country;\n    }\n  }\n\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1189,6 +1207,9 @@
                     }
                 ]
             },
+            "implements": [
+                "OnInit"
+            ],
             "accessors": {
                 "stateName": {
                     "name": "stateName",
@@ -1196,11 +1217,11 @@
                         "name": "stateName",
                         "type": "",
                         "returnType": "",
-                        "line": 41
+                        "line": 49
                     }
                 }
             },
-            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n    <div class=\"location-top-msg\" [@hideMsg]=\"stateName\">\n        <div class=\"icon\">\n            <i class=\"fas fa-globe-americas\"></i>\n        </div>\n        <div class=\"right\">\n            <div>\n                <p [innerHTML]=\"data.observable?.content\"></p>\n            </div>\n            <div class=\"actions\">\n                <button \n                 class=\"btn btn-info btn-change-country\"\n                 (click)=changeLocation(data.observable?.country)>\n                    <i class=\"far fa-flag\"></i>\n                    {{ data.observable?.country }}\n                </button>\n                <button \n                 class=\"btn btn-light\"\n                 (click)=closeMsg()>\n                    Mantenerse en la página\n                </button>\n            </div>\n        </div>\n    </div>\n</ng-container>"
+            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n    <div class=\"location-top-msg\" [@hideMsg]=\"stateName\">\n        <div class=\"icon\">\n            <i class=\"fas fa-globe-americas\"></i>\n        </div>\n        <div class=\"right\">\n            <div>\n                <p [innerHTML]=\"message\"></p>\n            </div>\n            <div class=\"actions\">\n                <button \n                 class=\"btn btn-info btn-change-country\"\n                 (click)=changeLocation(data.observable?.country)>\n                    <i class=\"far fa-flag\"></i>\n                    {{ currentCountry }}\n                </button>\n                <button \n                 class=\"btn btn-light\"\n                 (click)=closeMsg()>\n                    Mantenerse en la página\n                </button>\n            </div>\n        </div>\n    </div>\n</ng-container>"
         }
     ],
     "modules": [
@@ -2011,7 +2032,7 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
+                "file": "src/stories/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2021,16 +2042,6 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2042,6 +2053,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2139,21 +2160,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Page.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -2440,38 +2461,6 @@
                     "defaultValue": "(args: Button) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/Header.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Header>",
-                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-                }
-            ],
             "src/stories/Page.stories.ts": [
                 {
                     "name": "LoggedIn",
@@ -2502,6 +2491,38 @@
                     "deprecationMessage": "",
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
                 }
             ]
         },
@@ -2547,7 +2568,7 @@
                 "linktype": "component",
                 "name": "RegisterGeolocationTopComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/10",
                 "status": "low"
             },
             {
@@ -2574,7 +2595,7 @@
                 "linktype": "component",
                 "name": "RegisterGeolocationComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/10",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
