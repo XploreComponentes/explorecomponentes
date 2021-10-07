@@ -27,34 +27,7 @@
         },
         {
             "name": "AfterContentInit",
-            "id": "interface-AfterContentInit-6dc79a9e900524f5a873097e0de16999-1",
-            "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.model.ts",
-            "deprecated": false,
-            "deprecationMessage": "",
-            "type": "interface",
-            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\nimport { Media } from \"@spartacus/storefront\";\n\nexport interface RegisterGeolocationModel extends CmsComponent {\n    country?: string;\n    content?: string;\n    logo?: Media;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
-            "properties": [],
-            "indexSignatures": [],
-            "kind": 166,
-            "methods": [
-                {
-                    "name": "ngAfterContentInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 11,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                }
-            ],
-            "isDuplicate": true,
-            "duplicateId": 1,
-            "duplicateName": "AfterContentInit-1"
-        },
-        {
-            "name": "AfterContentInit",
-            "id": "interface-AfterContentInit-fad3f9fff7f5da575c4d96232bf4aff3-2",
+            "id": "interface-AfterContentInit-fad3f9fff7f5da575c4d96232bf4aff3-1",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.model.ts",
             "deprecated": false,
             "deprecationMessage": "",
@@ -71,6 +44,33 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 9,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "isDuplicate": true,
+            "duplicateId": 1,
+            "duplicateName": "AfterContentInit-1"
+        },
+        {
+            "name": "AfterContentInit",
+            "id": "interface-AfterContentInit-6dc79a9e900524f5a873097e0de16999-2",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { CmsComponent } from \"@spartacus/core\";\nimport { Media } from \"@spartacus/storefront\";\n\nexport interface RegisterGeolocationModel extends CmsComponent {\n    country?: string;\n    content?: string;\n    logo?: Media;\n}\n\nexport interface AfterContentInit {\n    ngAfterContentInit(): void\n  }",
+            "properties": [],
+            "indexSignatures": [],
+            "kind": 166,
+            "methods": [
+                {
+                    "name": "ngAfterContentInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -111,6 +111,38 @@
             "kind": 164,
             "methods": [],
             "extends": "CmsComponent"
+        },
+        {
+            "name": "KeyValuePair",
+            "id": "interface-KeyValuePair-0d1bcba08fbd93f58e2997ce35169823",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.store.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { ComponentStore } from '@ngrx/component-store';\nimport { Injectable } from \"@angular/core\";\n\ninterface KeyValuePair {\n  code: string;\n  text: string;\n}\n\nexport interface RegisterGeolocationTopState {\n    currentCountry?: string;\n    selectedCountry?: string;\n    message?: string;\n    hide?: boolean;\n  }\n  \n@Injectable()\nexport class RegisterGeolocationTopStore extends ComponentStore<RegisterGeolocationTopState> {\n  \n  constructor() {\n    super({\n        currentCountry: 'Spain', \n        selectedCountry: 'Ireland', \n        message: 'Visit our local site for more information and offers for your country.',\n        hide: false\n    });\n  }\n\n  readonly getCurrentCountry = this.select(state => {\n      return state.currentCountry;\n  });\n\n  readonly getSelectedCountry = this.select(state => {\n    return state.selectedCountry\n  })\n\n  readonly getMessage = this.select(state => {\n    return state.message\n  })\n\n  readonly isHide = this.select(state => {\n      return state.hide\n  })  \n\n  readonly setSelectedCountry = this.updater(\n    (state: RegisterGeolocationTopState, newSelectedCountry: string) => {\n      return {\n        ...state,\n        selectedCountry: newSelectedCountry\n      }\n    }\n  )\n\n  readonly setHide = this.updater(\n    (state: RegisterGeolocationTopState, newHide: boolean) => {\n      return {\n        ...state,\n        hide: newHide\n      }\n    }\n  )\n}",
+            "properties": [
+                {
+                    "name": "code",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 164,
+            "methods": []
         },
         {
             "name": "RegisterGeolocationModel",
@@ -186,9 +218,161 @@
             "kind": 164,
             "methods": [],
             "extends": "CmsComponent"
+        },
+        {
+            "name": "RegisterGeolocationTopState",
+            "id": "interface-RegisterGeolocationTopState-0d1bcba08fbd93f58e2997ce35169823",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.store.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { ComponentStore } from '@ngrx/component-store';\nimport { Injectable } from \"@angular/core\";\n\ninterface KeyValuePair {\n  code: string;\n  text: string;\n}\n\nexport interface RegisterGeolocationTopState {\n    currentCountry?: string;\n    selectedCountry?: string;\n    message?: string;\n    hide?: boolean;\n  }\n  \n@Injectable()\nexport class RegisterGeolocationTopStore extends ComponentStore<RegisterGeolocationTopState> {\n  \n  constructor() {\n    super({\n        currentCountry: 'Spain', \n        selectedCountry: 'Ireland', \n        message: 'Visit our local site for more information and offers for your country.',\n        hide: false\n    });\n  }\n\n  readonly getCurrentCountry = this.select(state => {\n      return state.currentCountry;\n  });\n\n  readonly getSelectedCountry = this.select(state => {\n    return state.selectedCountry\n  })\n\n  readonly getMessage = this.select(state => {\n    return state.message\n  })\n\n  readonly isHide = this.select(state => {\n      return state.hide\n  })  \n\n  readonly setSelectedCountry = this.updater(\n    (state: RegisterGeolocationTopState, newSelectedCountry: string) => {\n      return {\n        ...state,\n        selectedCountry: newSelectedCountry\n      }\n    }\n  )\n\n  readonly setHide = this.updater(\n    (state: RegisterGeolocationTopState, newHide: boolean) => {\n      return {\n        ...state,\n        hide: newHide\n      }\n    }\n  )\n}",
+            "properties": [
+                {
+                    "name": "currentCountry",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "hide",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "message",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "selectedCountry",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 164,
+            "methods": []
         }
     ],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "RegisterGeolocationTopStore",
+            "id": "injectable-RegisterGeolocationTopStore-0d1bcba08fbd93f58e2997ce35169823",
+            "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.store.ts",
+            "properties": [
+                {
+                    "name": "getCurrentCountry",
+                    "defaultValue": "this.select(state => {\n      return state.currentCountry;\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 28,
+                    "modifierKind": [
+                        143
+                    ]
+                },
+                {
+                    "name": "getMessage",
+                    "defaultValue": "this.select(state => {\n    return state.message\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 36,
+                    "modifierKind": [
+                        143
+                    ]
+                },
+                {
+                    "name": "getSelectedCountry",
+                    "defaultValue": "this.select(state => {\n    return state.selectedCountry\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 32,
+                    "modifierKind": [
+                        143
+                    ]
+                },
+                {
+                    "name": "isHide",
+                    "defaultValue": "this.select(state => {\n      return state.hide\n  })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 40,
+                    "modifierKind": [
+                        143
+                    ]
+                },
+                {
+                    "name": "setHide",
+                    "defaultValue": "this.updater(\n    (state: RegisterGeolocationTopState, newHide: boolean) => {\n      return {\n        ...state,\n        hide: newHide\n      }\n    }\n  )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 53,
+                    "modifierKind": [
+                        143
+                    ]
+                },
+                {
+                    "name": "setSelectedCountry",
+                    "defaultValue": "this.updater(\n    (state: RegisterGeolocationTopState, newSelectedCountry: string) => {\n      return {\n        ...state,\n        selectedCountry: newSelectedCountry\n      }\n    }\n  )",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 44,
+                    "modifierKind": [
+                        143
+                    ]
+                }
+            ],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { ComponentStore } from '@ngrx/component-store';\nimport { Injectable } from \"@angular/core\";\n\ninterface KeyValuePair {\n  code: string;\n  text: string;\n}\n\nexport interface RegisterGeolocationTopState {\n    currentCountry?: string;\n    selectedCountry?: string;\n    message?: string;\n    hide?: boolean;\n  }\n  \n@Injectable()\nexport class RegisterGeolocationTopStore extends ComponentStore<RegisterGeolocationTopState> {\n  \n  constructor() {\n    super({\n        currentCountry: 'Spain', \n        selectedCountry: 'Ireland', \n        message: 'Visit our local site for more information and offers for your country.',\n        hide: false\n    });\n  }\n\n  readonly getCurrentCountry = this.select(state => {\n      return state.currentCountry;\n  });\n\n  readonly getSelectedCountry = this.select(state => {\n    return state.selectedCountry\n  })\n\n  readonly getMessage = this.select(state => {\n    return state.message\n  })\n\n  readonly isHide = this.select(state => {\n      return state.hide\n  })  \n\n  readonly setSelectedCountry = this.updater(\n    (state: RegisterGeolocationTopState, newSelectedCountry: string) => {\n      return {\n        ...state,\n        selectedCountry: newSelectedCountry\n      }\n    }\n  )\n\n  readonly setHide = this.updater(\n    (state: RegisterGeolocationTopState, newHide: boolean) => {\n      return {\n        ...state,\n        hide: newHide\n      }\n    }\n  )\n}",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 17
+            },
+            "extends": "ComponentStore",
+            "type": "injectable"
+        }
+    ],
     "guards": [],
     "interceptors": [],
     "classes": [],
@@ -244,126 +428,6 @@
             ],
             "stylesData": "",
             "templateData": "<cx-storefront></cx-storefront>\n"
-        },
-        {
-            "name": "ButtonComponent",
-            "id": "component-ButtonComponent-642c6c4e474cd5a0ac760dfda26b2fc9",
-            "file": "src/stories/button.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "storybook-button",
-            "styleUrls": [
-                "./button.css"
-            ],
-            "styles": [],
-            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "backgroundColor",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "What background color to use",
-                    "description": "<p>What background color to use</p>\n",
-                    "line": 26,
-                    "type": "string"
-                },
-                {
-                    "name": "label",
-                    "defaultValue": "'Button'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "jsdoctags": [
-                        {
-                            "pos": 711,
-                            "end": 724,
-                            "flags": 4227072,
-                            "modifierFlagsCache": 0,
-                            "transformFlags": 0,
-                            "kind": 322,
-                            "tagName": {
-                                "pos": 712,
-                                "end": 720,
-                                "flags": 4227072,
-                                "modifierFlagsCache": 0,
-                                "transformFlags": 0,
-                                "kind": 79,
-                                "escapedText": "required"
-                            },
-                            "comment": ""
-                        }
-                    ],
-                    "rawdescription": "Button contents",
-                    "description": "<p>Button contents</p>\n",
-                    "line": 40,
-                    "type": "string"
-                },
-                {
-                    "name": "primary",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "Is this the principal call to action on the page?",
-                    "description": "<p>Is this the principal call to action on the page?</p>\n",
-                    "line": 20,
-                    "type": "boolean"
-                },
-                {
-                    "name": "size",
-                    "defaultValue": "'medium'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "How large should the button be?",
-                    "description": "<p>How large should the button be?</p>\n",
-                    "line": 32,
-                    "type": "\"small\" | \"medium\" | \"large\""
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onClick",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "rawdescription": "\n\nOptional click handler\n",
-                    "description": "<p>Optional click handler</p>\n",
-                    "line": 46,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
-                    "styleUrl": "./button.css"
-                }
-            ],
-            "stylesData": "",
-            "accessors": {
-                "classes": {
-                    "name": "classes",
-                    "getSignature": {
-                        "name": "classes",
-                        "type": "[]",
-                        "returnType": "string[]",
-                        "line": 48
-                    }
-                }
-            }
         },
         {
             "name": "GeolocationBlockingComponent",
@@ -666,150 +730,6 @@
             "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n  <ng-template #modalData let-modal class=\"country-modal\">\n      <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header\">\n            <h4 class=\"modal-title\">Country Selector</h4>\n            <button type=\"button\" class=\"close modal-close\" aria-label=\"Close\" (click)=\"dismiss('Cross click')\">\n              <span aria-hidden=\"true\">×</span>\n            </button>\n          </div>\n          <div class=\"modal-body\">\n            <p>Current country by IP: {{ currentCountry }}</p>\n            <div ngbDropdown>\n              <button class=\"btn btn-warning\" id=\"countries\" \n                      ngbDropdownToggle>Select a country</button>\n              <div ngbDropdownMenu=\"countries\" class=\"dropdown-menu\">\n                <button \n                  id=\"{{'Clear_' + indice}}\"\n                  class=\"button-dropdown\"\n                \n                  ngbDropdownItem *ngFor=\"let countryLang of countryList; let indice=index\"\n                  (click) = \"setLanguage(countryLang.code)\"\n                >\n                  {{ countryLang.text }}\n                </button>\n              </div>\n            </div>\n          </div>\n          <div class=\"modal-footer\">\n            <button type=\"button\" class=\"btn btn-info btn-close-modal\" (click)=\"dismiss('Save click')\">Close</button>\n          </div>\n        </div>\n      </div>\n  </ng-template>\n  \n  <button class=\"btn btn-info btn-open-modal\" id=\"testid\" (click)=\"openModal(modalData)\">Show country selector</button>\n  <br>\n  <p>Country selected: <span class=\"country-selected\">{{ countrySelected }}</span></p>\n</ng-container>\n"
         },
         {
-            "name": "HeaderComponent",
-            "id": "component-HeaderComponent-246e2a69dc126a3bd76c6328dd3b93e2",
-            "file": "src/stories/header.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "storybook-header",
-            "styleUrls": [
-                "./header.css"
-            ],
-            "styles": [],
-            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "user",
-                    "defaultValue": "null",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 53,
-                    "type": ""
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onCreateAccount",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 62,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onLogin",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 56,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onLogout",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 59,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n",
-                    "styleUrl": "./header.css"
-                }
-            ],
-            "stylesData": ""
-        },
-        {
-            "name": "PageComponent",
-            "id": "component-PageComponent-8f196770333aa216860a88c0b6b221aa",
-            "file": "src/stories/page.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "storybook-page",
-            "styleUrls": [
-                "./page.css"
-            ],
-            "styles": [],
-            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "user",
-                    "defaultValue": "null",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 64,
-                    "type": ""
-                }
-            ],
-            "outputsClass": [
-                {
-                    "name": "onCreateAccount",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 73,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onLogin",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 67,
-                    "type": "EventEmitter"
-                },
-                {
-                    "name": "onLogout",
-                    "defaultValue": "new EventEmitter<Event>()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 70,
-                    "type": "EventEmitter"
-                }
-            ],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nh2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\np {\n  margin: 1em 0;\n}\n\na {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nli {\n  margin-bottom: 8px;\n}\n\n.tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
-                    "styleUrl": "./page.css"
-                }
-            ],
-            "stylesData": ""
-        },
-        {
             "name": "RegisterGeolocationComponent",
             "id": "component-RegisterGeolocationComponent-9cde854ebb1401db457ca3ed1c67172a",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation/register-geolocation.component.ts",
@@ -1052,13 +972,17 @@
         },
         {
             "name": "RegisterGeolocationTopComponent",
-            "id": "component-RegisterGeolocationTopComponent-1ef185f456d05aab501f129101472633",
+            "id": "component-RegisterGeolocationTopComponent-d84ff1c10ab4ff47c5492cbba23d61f0",
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
-            "providers": [],
+            "providers": [
+                {
+                    "name": "RegisterGeolocationTopStore"
+                }
+            ],
             "selector": "register-geolocation-top",
             "styleUrls": [
                 "./register-geolocation-top.scss"
@@ -1068,29 +992,7 @@
                 "./register-geolocation-top.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "currentCountry",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 27,
-                    "type": "string"
-                },
-                {
-                    "name": "hide",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 33,
-                    "type": "boolean"
-                },
-                {
-                    "name": "message",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 30,
-                    "type": "string"
-                }
-            ],
+            "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [
                 {
@@ -1100,19 +1002,22 @@
                     "type": "CmsComponentData<RegisterGeolocationTopModel>",
                     "optional": false,
                     "description": "",
-                    "line": 38,
+                    "line": 30,
                     "modifierKind": [
                         123
                     ]
                 },
                 {
-                    "name": "countrySelected",
+                    "name": "store",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "string",
-                    "optional": true,
+                    "type": "RegisterGeolocationTopStore",
+                    "optional": false,
                     "description": "",
-                    "line": 35
+                    "line": 31,
+                    "modifierKind": [
+                        123
+                    ]
                 }
             ],
             "methodsClass": [
@@ -1129,7 +1034,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 57,
+                    "line": 50,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1150,9 +1055,37 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 53,
+                    "line": 46,
                     "deprecated": false,
                     "deprecationMessage": ""
+                },
+                {
+                    "name": "getValue",
+                    "args": [
+                        {
+                            "name": "obj",
+                            "type": "Observable<any>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 55,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "obj",
+                            "type": "Observable<any>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "ngOnInit",
@@ -1160,7 +1093,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 41,
+                    "line": 34,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1172,7 +1105,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { animate, state, style, transition, trigger } from '@angular/animations';\nimport { Component, Input, OnInit } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { RegisterGeolocationTopModel } from './register-geolocation-top.model';\n\n@Component({\n    selector: 'register-geolocation-top',\n    templateUrl: './register-geolocation-top.component.html',\n    styleUrls: ['./register-geolocation-top.scss'],\n    animations: [\n      trigger('hideMsg', [\n        state('hide', style({\n          opacity: 0\n      })),\n      state('show', style({\n          opacity: 1\n      })),\n        transition('* => *', animate(300))\n    ]),\n  ]\n  })\n\n  export class RegisterGeolocationTopComponent implements OnInit{\n\n    @Input()\n    currentCountry?: string;\n\n    @Input()\n    message?: string;\n\n    @Input()\n    hide?: boolean;\n\n    countrySelected?: string;\n\n  constructor(\n    public component: CmsComponentData<RegisterGeolocationTopModel>\n  ) {}\n\n  ngOnInit() {\n    if(this.component?.data$) {\n      this.component.data$.subscribe(data => {\n        this.currentCountry = data.country,\n        this.message = data.content;\n      })\n    }\n  }\n    get stateName() {\n      return this.hide ? 'hide' : 'show';\n    }\n  \n    closeMsg() {\n      this.hide = !this.hide;\n    }\n  \n    changeLocation(country: string | undefined) {\n      this.closeMsg();\n      this.countrySelected = 'Country changed to ' + country;\n    }\n  }\n\n",
+            "sourceCode": "import { animate, state, style, transition, trigger } from '@angular/animations';\nimport { Component, Input, OnInit } from '@angular/core';\nimport { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';\nimport { CmsComponentData } from '@spartacus/storefront';\nimport { Observable } from 'rxjs';\nimport { RegisterGeolocationTopModel } from './register-geolocation-top.model';\nimport { RegisterGeolocationTopStore } from './register-geolocation-top.store';\n\n@Component({\n    selector: 'register-geolocation-top',\n    templateUrl: './register-geolocation-top.component.html',\n    styleUrls: ['./register-geolocation-top.scss'],\n    animations: [\n      trigger('hideMsg', [\n        state('hide', style({\n          opacity: 0\n      })),\n      state('show', style({\n          opacity: 1\n      })),\n        transition('* => *', animate(300))\n      ]),\n    ],\n    providers: [RegisterGeolocationTopStore]\n  })\n\n  export class RegisterGeolocationTopComponent implements OnInit{\n\n  constructor(\n    public component: CmsComponentData<RegisterGeolocationTopModel>,\n    public store: RegisterGeolocationTopStore\n  ) {}\n\n  ngOnInit() {\n    if(this.component?.data$) {\n      this.component.data$.subscribe(data => {\n        // Initialize state store\n      })\n    }\n  }\n    get stateName() {\n      console.log(`Is hide: ${this.getValue(this.store.isHide)}`)\n      return this.getValue(this.store.isHide) ? 'hide' : 'show';\n    }\n  \n    closeMsg() {\n      this.store.setHide(!this.getValue(this.store.isHide))\n    }\n  \n    changeLocation(country: string | undefined) {\n      this.closeMsg();\n      this.store.setSelectedCountry('Country changed to ' + country);\n    }\n\n    getValue(obj: Observable<any>){\n      let value: any;\n      obj.subscribe(v => value = v);\n      return value;\n    }\n  }\n\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1192,13 +1125,28 @@
                         "type": "CmsComponentData<RegisterGeolocationTopModel>",
                         "deprecated": false,
                         "deprecationMessage": ""
+                    },
+                    {
+                        "name": "store",
+                        "type": "RegisterGeolocationTopStore",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
-                "line": 35,
+                "line": 27,
                 "jsdoctags": [
                     {
                         "name": "component",
                         "type": "CmsComponentData<RegisterGeolocationTopModel>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "store",
+                        "type": "RegisterGeolocationTopStore",
                         "deprecated": false,
                         "deprecationMessage": "",
                         "tagName": {
@@ -1217,11 +1165,11 @@
                         "name": "stateName",
                         "type": "",
                         "returnType": "",
-                        "line": 49
+                        "line": 41
                     }
                 }
             },
-            "templateData": "<ng-container *ngIf=\"{ observable: component.data$ | async } as data\">\n    <div class=\"location-top-msg\" [@hideMsg]=\"stateName\">\n        <div class=\"icon\">\n            <i class=\"fas fa-globe-americas\"></i>\n        </div>\n        <div class=\"right\">\n            <div>\n                <p [innerHTML]=\"message\"></p>\n            </div>\n            <div class=\"actions\">\n                <button \n                 class=\"btn btn-info btn-change-country\"\n                 (click)=changeLocation(data.observable?.country)>\n                    <i class=\"far fa-flag\"></i>\n                    {{ currentCountry }}\n                </button>\n                <button \n                 class=\"btn btn-light\"\n                 (click)=closeMsg()>\n                    Mantenerse en la página\n                </button>\n            </div>\n        </div>\n    </div>\n</ng-container>"
+            "templateData": "<ng-container>\n    <div class=\"location-top-msg\" [@hideMsg]=\"stateName\">\n        <div class=\"icon\">\n            <i class=\"fas fa-globe-americas\"></i>\n        </div>\n        <div class=\"right\">\n            <div>\n                <p [innerHTML]=\"store.getMessage | async\"></p>\n            </div>\n            <div class=\"actions\">\n                <button \n                 class=\"btn btn-info btn-change-country\"\n                 (click)=changeLocation(data.observable?.country)>\n                    <i class=\"far fa-flag\"></i>\n                    {{ store.getCurrentCountry | async }}\n                </button>\n                <button \n                 class=\"btn btn-light\"\n                 (click)=closeMsg()>\n                    Mantenerse en la página\n                </button>\n            </div>\n        </div>\n    </div>\n</ng-container>"
         }
     ],
     "modules": [
@@ -1833,13 +1781,13 @@
         },
         {
             "name": "TestRegisterGeolocationTopModule",
-            "id": "module-TestRegisterGeolocationTopModule-cd433dca5597729e19c68a54f36dad24",
+            "id": "module-TestRegisterGeolocationTopModule-6b9c0ebbcdd02d6e3c6ddd6a9af354ae",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\nimport { RegisterGeolocationTopComponent } from \"projects/xplorecomponents/src/public-api\";\n\n@NgModule({\n    declarations: [RegisterGeolocationTopComponent],\n    exports: [RegisterGeolocationTopComponent],\n    entryComponents: [RegisterGeolocationTopComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n    I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            RegisterGeolocationTopComponent: {\n              component: RegisterGeolocationTopComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    bootstrap: [RegisterGeolocationTopComponent],\n    providers: [\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestRegisterGeolocationTopModule { }",
+            "sourceCode": "import { CommonModule } from \"@angular/common\";\nimport { NgModule } from \"@angular/core\";\nimport { CmsConfig, ConfigModule, LanguageService, provideConfig } from \"@spartacus/core\";\nimport { translationChunksConfig } from '@spartacus/assets';\nimport {\n  I18nModule,\n} from '@spartacus/core';\nimport { NgbModule } from \"@ng-bootstrap/ng-bootstrap\";\nimport { RegisterGeolocationTopComponent } from \"projects/xplorecomponents/src/public-api\";\nimport { ReactiveComponentModule } from \"@ngrx/component\";\n\n@NgModule({\n    declarations: [RegisterGeolocationTopComponent],\n    exports: [RegisterGeolocationTopComponent],\n    entryComponents: [RegisterGeolocationTopComponent],\n    imports: [\n        CommonModule,\n        NgbModule,\n        ReactiveComponentModule,\n        I18nModule,\n        ConfigModule.withConfig({\n          cmsComponents: {\n            RegisterGeolocationTopComponent: {\n              component: RegisterGeolocationTopComponent\n            }\n          }\n        } as CmsConfig),\n    ],\n    bootstrap: [RegisterGeolocationTopComponent],\n    providers: [\n      provideConfig({\n        i18n: {\n          backend: {\n            loadPath: 'assets/i18n-assets/{{lng}}/{{ns}}.json',\n          },\n          chunks: translationChunksConfig,\n          fallbackLang: 'en',\n        },\n      }),\n    ],\n})\n\nexport class TestRegisterGeolocationTopModule { }",
             "children": [
                 {
                     "type": "providers",
@@ -1969,36 +1917,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/geolocation-blocking.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/register-geolocation-top.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/register-geolocation.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2019,64 +1937,14 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "Large",
+                "name": "initialState",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "stories/register-geolocation-top.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedIn",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedIn",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "object",
+                "defaultValue": "{\n  currentCountry: 'Spain', \n  selectedCountry: 'Ireland', \n  message: 'Visit our local site for more information and offers for your country.',\n  hide: false\n}"
             },
             {
                 "name": "require",
@@ -2095,26 +1963,6 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
-            },
-            {
-                "name": "Secondary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Small",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Template",
@@ -2141,66 +1989,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/register-geolocation.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RegisterGeolocationComponent>",
-                "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Button>",
-                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Page.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Page>",
-                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/geolocation-blocking.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<GeolocationBlockingComponent>",
-                "defaultValue": "args => ({\n    component: GeolocationBlockingComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/register-geolocation-top.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<RegisterGeolocationTopComponent>",
-                "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/register-geolocation.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<RegisterGeolocationComponent>",
@@ -2287,6 +2075,16 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "initialState",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/register-geolocation-top.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  currentCountry: 'Spain', \n  selectedCountry: 'Ireland', \n  message: 'Visit our local site for more information and offers for your country.',\n  hide: false\n}"
+                },
+                {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -2319,72 +2117,6 @@
                     "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
                 }
             ],
-            "src/stories/geolocation-blocking.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/geolocation-blocking.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/geolocation-blocking.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<GeolocationBlockingComponent>",
-                    "defaultValue": "args => ({\n    component: GeolocationBlockingComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
-            "src/stories/register-geolocation-top.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/register-geolocation-top.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/register-geolocation-top.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<RegisterGeolocationTopComponent>",
-                    "defaultValue": "args => ({\n    component: RegisterGeolocationTopComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
-            "src/stories/register-geolocation.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/register-geolocation.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/register-geolocation.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<RegisterGeolocationComponent>",
-                    "defaultValue": "args => ({\n    component: RegisterGeolocationComponent,\n    props: {\n      ...args,\n    },\n  })"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -2408,122 +2140,6 @@
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
                 }
-            ],
-            "src/stories/Button.stories.ts": [
-                {
-                    "name": "Large",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Secondary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Small",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Button>",
-                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/stories/Page.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Page>",
-                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
-                }
-            ],
-            "src/stories/Header.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Header.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<Header>",
-                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
-                }
             ]
         },
         "groupedFunctions": {},
@@ -2532,7 +2148,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 1,
+        "count": 0,
         "status": "low",
         "files": [
             {
@@ -2568,7 +2184,7 @@
                 "linktype": "component",
                 "name": "RegisterGeolocationTopComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/10",
+                "coverageCount": "0/8",
                 "status": "low"
             },
             {
@@ -2587,6 +2203,33 @@
                 "name": "RegisterGeolocationTopModel",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.store.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "RegisterGeolocationTopStore",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.store.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "KeyValuePair",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/xplorecomponents/src/lib/components/register-geolocation-top/register-geolocation-top.store.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "RegisterGeolocationTopState",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -2666,203 +2309,6 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Large",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Secondary",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Small",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Header.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "LoggedIn",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Header.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "LoggedOut",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Header.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Page.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "LoggedIn",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Page.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "LoggedOut",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Page.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/button.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "ButtonComponent",
-                "coveragePercent": 83,
-                "coverageCount": "5/6",
-                "status": "very-good"
-            },
-            {
-                "filePath": "src/stories/geolocation-blocking.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/geolocation-blocking.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/header.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "HeaderComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/5",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/page.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "PageComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/5",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/register-geolocation-top.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/register-geolocation-top.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/register-geolocation.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/register-geolocation.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
                 "filePath": "src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -2908,6 +2354,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/register-geolocation-top.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "initialState",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

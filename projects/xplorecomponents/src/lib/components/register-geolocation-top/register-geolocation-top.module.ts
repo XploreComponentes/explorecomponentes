@@ -7,6 +7,7 @@ import {
 } from '@spartacus/core';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { RegisterGeolocationTopComponent } from "projects/xplorecomponents/src/public-api";
+import { ReactiveComponentModule } from "@ngrx/component";
 
 @NgModule({
     declarations: [RegisterGeolocationTopComponent],
@@ -15,7 +16,8 @@ import { RegisterGeolocationTopComponent } from "projects/xplorecomponents/src/p
     imports: [
         CommonModule,
         NgbModule,
-    I18nModule,
+        ReactiveComponentModule,
+        I18nModule,
         ConfigModule.withConfig({
           cmsComponents: {
             RegisterGeolocationTopComponent: {

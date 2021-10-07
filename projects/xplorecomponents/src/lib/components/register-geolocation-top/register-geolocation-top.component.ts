@@ -2,7 +2,9 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { CmsComponentData } from '@spartacus/storefront';
+import { Observable } from 'rxjs';
 import { RegisterGeolocationTopModel } from './register-geolocation-top.model';
+import { RegisterGeolocationTopStore } from './register-geolocation-top.store';
 
 @Component({
     selector: 'register-geolocation-top',
@@ -17,46 +19,43 @@ import { RegisterGeolocationTopModel } from './register-geolocation-top.model';
           opacity: 1
       })),
         transition('* => *', animate(300))
-    ]),
-  ]
+      ]),
+    ],
+    providers: [RegisterGeolocationTopStore]
   })
 
   export class RegisterGeolocationTopComponent implements OnInit{
 
-    @Input()
-    currentCountry?: string;
-
-    @Input()
-    message?: string;
-
-    @Input()
-    hide?: boolean;
-
-    countrySelected?: string;
-
   constructor(
-    public component: CmsComponentData<RegisterGeolocationTopModel>
+    public component: CmsComponentData<RegisterGeolocationTopModel>,
+    public store: RegisterGeolocationTopStore
   ) {}
 
   ngOnInit() {
     if(this.component?.data$) {
       this.component.data$.subscribe(data => {
-        this.currentCountry = data.country,
-        this.message = data.content;
+        // Initialize state store
       })
     }
   }
     get stateName() {
-      return this.hide ? 'hide' : 'show';
+      console.log(`Is hide: ${this.getValue(this.store.isHide)}`)
+      return this.getValue(this.store.isHide) ? 'hide' : 'show';
     }
   
     closeMsg() {
-      this.hide = !this.hide;
+      this.store.setHide(!this.getValue(this.store.isHide))
     }
   
     changeLocation(country: string | undefined) {
       this.closeMsg();
-      this.countrySelected = 'Country changed to ' + country;
+      this.store.setSelectedCountry('Country changed to ' + country);
+    }
+
+    getValue(obj: Observable<any>){
+      let value: any;
+      obj.subscribe(v => value = v);
+      return value;
     }
   }
 

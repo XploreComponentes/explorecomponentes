@@ -1,18 +1,18 @@
-<ng-container *ngIf="{ observable: component.data$ | async } as data">
+<ng-container>
     <div class="location-top-msg" [@hideMsg]="stateName">
         <div class="icon">
             <i class="fas fa-globe-americas"></i>
         </div>
         <div class="right">
             <div>
-                <p [innerHTML]="message"></p>
+                <p [innerHTML]="store.getMessage | async"></p>
             </div>
             <div class="actions">
                 <button 
                  class="btn btn-info btn-change-country"
                  (click)=changeLocation(data.observable?.country)>
                     <i class="far fa-flag"></i>
-                    {{ currentCountry }}
+                    {{ store.getCurrentCountry | async }}
                 </button>
                 <button 
                  class="btn btn-light"
