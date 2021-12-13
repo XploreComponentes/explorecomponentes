@@ -30,5 +30,5 @@ const Template: Story<RegisterGeolocationComponent> = args => ({
   export const Default = Template.bind({});
   Default.args = {
     currentCountry: 'Spain',
-    modalBody: 'Change your country location'
+    modalBody: 'Update your country location'
   };
